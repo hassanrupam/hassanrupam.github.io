@@ -81,6 +81,10 @@ export const BACKGROUND_WALLPAPERS = {
     "wall-6": "./images/wallpapers/wall-6.webp",
     "wall-7": "./images/wallpapers/wall-7.webp",
     "wall-8": "./images/wallpapers/wall-8.webp",
+    "wall-find-a-way": "./images/wallpapers/wall-find-a-way.webp",
+    "wall-hassan": "./images/wallpapers/wall-hassan.webp",
+    "wall-night-owl": "./images/wallpapers/wall-night-owl.webp",
+    "wall-rupam": "./images/wallpapers/wall-rupam.webp",
 }
 
 export const TIME_MERIDIEM = {

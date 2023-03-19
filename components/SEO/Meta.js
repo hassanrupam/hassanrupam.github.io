@@ -7,7 +7,7 @@ export default function Meta() {
            /* Primary Meta Tags */
             <title>Hassan Sakib Afrin Portfolio - Software Engineer</title>
             <meta charSet="utf-8" />
-            <meta name="title" content="Hassan Sakib Afrin Portfolio - Computer Engineering Student" />
+            <meta name="title" content="Hassan Sakib Afrin Portfolio - Software Engineer" />
             <meta name="description"
                 content="Hassan Sakib Afrin's (hassanrupam) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="author" content="Hassan Sakib Afrin (hassanrupam)" />
@@ -22,20 +22,20 @@ export default function Meta() {
             /* Search Engine */
             <meta name="image" content="images/logos/fevicon.png" />
             /* Schema.org for Google */
-            <meta itemProp="name" content="Hassan Sakib Afrin Portfolio - Computer Engineering Student" />
+            <meta itemProp="name" content="Hassan Sakib Afrin Portfolio - Software Engineer" />
             <meta itemProp="description"
                 content="Hassan Sakib Afrin's (hassanrupam) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta itemProp="image" content="images/logos/fevicon.png" />
             /* Twitter */
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="Hassan Sakib Afrin Portfolio - Computer Engineering Student" />
+            <meta name="twitter:title" content="Hassan Sakib Afrin Portfolio - Software Engineer" />
             <meta name="twitter:description"
                 content="Hassan Sakib Afrin's (hassanrupam) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="twitter:site" content="hassanrupam" />
             <meta name="twitter:creator" content="hassanrupam" />
             <meta name="twitter:image:src" content="images/logos/logo_1024.png" />
             /* Open Graph general (Facebook, Pinterest & Google+) */
-            <meta name="og:title" content="Hassan Sakib Afrin Portfolio - Computer Engineering Student" />
+            <meta name="og:title" content="Hassan Sakib Afrin Portfolio - Software Engineer" />
             <meta name="og:description"
                 content="Hassan Sakib Afrin's (hassanrupam) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="og:image" content="images/logos/logo_1200.png" />
