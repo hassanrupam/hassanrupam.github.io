@@ -9,7 +9,7 @@
     "start": "next build && PORT=3000 next start",
     "export": "next export",
     "predeploy": "next build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d pages"
   },
   "engines": {
     "node": ">=16.x"
