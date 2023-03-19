@@ -27,7 +27,7 @@ const Education = (props) => {
                 </li>
                 <li className="list-disc mt-5">
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        HSC<sup>th</sup> (Science)
+                        HSC (Science)
                     </div>
                     <div className=" text-sm text-gray-400 mt-0.5">2013 - 2014</div>
                     <div className=" text-sm md:text-base"> Shaheed Sayed Nazrul Islam College, Mymensingh, Bangladesh</div>
@@ -35,7 +35,7 @@ const Education = (props) => {
                 </li>
                 <li className="list-disc mt-5">
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        SSC<sup>th</sup> (Science)
+                        SSC (Science)
                     </div>
                     <div className=" text-sm text-gray-400 mt-0.5">2011 - 2012</div>
                     <div className=" text-sm md:text-base">Premier Ideal High School, Mymensingh, Bangladesh</div>
