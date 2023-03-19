@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next build && PORT=3000 next start",
     "export": "next export",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d pages"
+    "predeploy": "next build && next export && touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
+    "deploy": "gh-pages -d out -t true"
   },
   "engines": {
     "node": ">=16.x"
