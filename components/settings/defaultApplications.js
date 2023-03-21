@@ -26,7 +26,7 @@ const DefaultApplications = (props) => {
                             return (
                                 <div className="w-96 flex flex-grow items-center justify-end mx-4 p-2 ">
                                     <span className="text-right opacity-50">{appInfo.appBase}</span>
-                                    <span className="w-64 flex justify-between items-center px-2 bg-ub-cool-grey opacity-50 mx-3 border-2 border-black" onClick={()=>{handleClick()}}>
+                                    <span className="w-64 flex justify-between items-center px-2 bg-ub-cool-grey opacity-50 mx-3 border-2 border-black cursor-pointer" onClick={()=>{handleClick()}}>
                                         <span className="flex flex-end">
                                             <span className="flex items-center px-2">
                                                 <img width="16px" height="16px" src={appInfo.iconPath} alt="ubuntu web app default" />

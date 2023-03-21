@@ -151,19 +151,22 @@ export const USERS_LIST = [
         initials: "G",
         name: "Guest",
         avatarColor: "#A020F0",
-        isAdmin: false
+        isAdmin: false,
+        isLoggedIn: true
     },
     {
         initials: "HA",
-        name: "Hassan Sakib Afrin (Rupam)",
+        name: "Hassan Sakib Afrin",
         avatarColor: "#008B8B",
-        isAdmin: true
+        isAdmin: true,
+        isLoggedIn: false
     },
     {
         initials: "SU",
         name: "HSR Super",
         avatarColor: "#8B0000",
-        isAdmin: true
+        isAdmin: true,
+        isLoggedIn: false
     },
    
 ]

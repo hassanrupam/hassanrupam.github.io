@@ -1,3 +1,4 @@
+import { APP_CONSTANTS } from "../../apps.config";
 import UserAvatar from "./userAvatar";
 
 const UserTile = (props) => {
@@ -6,7 +7,7 @@ const UserTile = (props) => {
         <>
             <div className="w-full h-full flex flex-col items-center justify-center">
                 <div className="pt-8">
-                <UserAvatar user={props.user} />
+                <UserAvatar user={props.user} size = {APP_CONSTANTS.SIZE.SMALL}/>
                 </div>
                 
                 <div className="w-full flex flex-col items-center justify-center" >

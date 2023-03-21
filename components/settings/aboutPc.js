@@ -17,11 +17,11 @@ const AboutPc = (props) => {
     return (
         <>
            <UnlockHeader triggerActive = {visible}/>
-            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={handleClick}>
-                <div className="w-4/4 flex flex-grow flex-col items-center justify-between p-4">
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={()=>{handleClick()}}>
+                <div className="w-4/4 flex flex-grow flex-col items-center justify-between p-2">
                     <img width="200px" height="200px" className="md:w-1/4 w-1/2" src="./themes/Yaru/status/cof_orange_hex.svg" alt="Ubuntu Logo" />
                 </div>
-                <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
+                <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500" onClick={handleClick}>
                     <div className="w-2/3 flex items-center justify-start px-4">
                         <span>Device Name</span>
@@ -34,7 +34,7 @@ const AboutPc = (props) => {
                     </div>
                 </div>
 
-                <div className="mt-8 text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
+                <div className="mt-4 text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500">
                     <div className="w-2/3 flex items-center justify-start px-4">
                         <span>Memory</span>
@@ -71,7 +71,7 @@ const AboutPc = (props) => {
                     </div>
                 </div>
 
-                <div className="mt-8 text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
+                <div className="mt-4 text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500">
                     <div className="w-2/3 flex items-center justify-start px-4">
                         <span>OS Name</span>
@@ -107,7 +107,7 @@ const AboutPc = (props) => {
                         <span>X11</span>
                     </div>
                 </div>
-                <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
+                <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500" onClick={handleClick}>
                     <div className="w-2/3 flex items-center justify-start px-4">
                         <span>Software Updates</span>

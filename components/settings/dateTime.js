@@ -68,7 +68,7 @@ const DateTime = (props) => {
 
                 <div className="mt-4 md:w-3/4 w-2/3 m-auto bg-ub-cool-grey p-4">
                     <span className='w-4/4 flex items-center justify-between font-bold text-gray-400 opacity-50'>Time Format
-                        <span className="bg-ub-cool-grey-light px-4 py-2 flex items-center justify-between mr-2" onClick={handleClick}> {TIME_MERIDIEM.AM} / {TIME_MERIDIEM.PM} 
+                        <span className="bg-ub-cool-grey-light px-4 py-2 flex items-center justify-between mr-2 cursor-pointer" onClick={handleClick}> {TIME_MERIDIEM.AM} / {TIME_MERIDIEM.PM} 
                         <SmallArrow className={"p-2"} angle="down" /></span>
                     </span>
                 </div>

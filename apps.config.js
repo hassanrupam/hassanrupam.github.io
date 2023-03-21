@@ -119,6 +119,13 @@ export const APP_CONSTANTS = {
         SECONDS_3: 3000,
         SECONDS_5: 5000,
         SECONDS_10: 10000
+    },
+    SIZE: {
+        EXTRA_SMALL: "xs",
+        SMALL: "sm",
+        MEDIUM: "md",
+        LARGE: "lg",
+        EXTRA_LARGE: "xl"
     }
 }
 
