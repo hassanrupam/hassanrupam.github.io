@@ -111,9 +111,9 @@ export class Settings extends Component {
                         .sort((a, b) => a.SERIAL > b.SERIAL ? 1 : -1)
                         .map((menuItem) => {
                             return (
-                                <div id={menuItem.ID} tabIndex={menuItem.SERIAL} onFocus={this.changeScreen} className={(this.state.active_screen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                                    <img className=" w-3 md:w-4" alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />
-                                    <span className=" ml-1 md:ml-2 text-gray-50 ">{menuItem.MENU_NAME}</span>
+                                <div title={menuItem.isActive ? menuItem.MENU_NAME : "Coming Soon..."} id={menuItem.ID} tabIndex={menuItem.SERIAL} onFocus={this.changeScreen} className={(this.state.active_screen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
+                                    <img className={`w-3 md:w-4 ${!menuItem.isActive && 'opacity-30'}`} alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />
+                                    <span className={`ml-1 md:ml-2 text-gray-50 ${!menuItem.isActive && 'opacity-30' }`}>{menuItem.MENU_NAME}</span>
                                 </div>
                             )
                         })
@@ -125,10 +125,10 @@ export class Settings extends Component {
     render() {
         return (
             <div className="w-full h-full flex bg-ub-cool-grey text-white select-none relative">
-                <div className="md:flex hidden flex-col w-1/4 md:w-1/5 text-sm overflow-y-auto windowMainScreen border-r border-black">
+                <div className="md:flex hidden flex-col w-1/4 md:w-1/5 text-sm overflow-y-auto windowMainScreen border-r border-black" style={{marginBottom:"3rem"}}>
                     {this.renderNavLinks()}
                 </div>
-                <div onClick={this.showNavBar} className="md:hidden flex flex-col items-center justify-center absolute bg-ub-cool-grey rounded w-6 h-6 top-1 left-1">
+                <div onClick={this.showNavBar} className="md:hidden flex flex-col items-center justify-center absolute bg-ub-cool-grey rounded w-6 h-6 top-1 left-1 overflow-y-auto">
                     <div className=" w-3.5 border-t border-white"></div>
                     <div className=" w-3.5 border-t border-white" style={{ marginTop: "2pt", marginBottom: "2pt" }}></div>
                     <div className=" w-3.5 border-t border-white"></div>

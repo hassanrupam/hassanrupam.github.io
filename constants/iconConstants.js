@@ -80,6 +80,10 @@ export const UBUNTU_ICONS_VALUES = {
                 ALT: "ubuntu audio medium"
             }
         },
+        BACKGROUND: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-wallpaper-symbolic.svg",
+            ALT: "ubuntu background"
+        },
         BATTERY: {
             GOOD: {
                 SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "battery-good-symbolic.svg",
@@ -102,7 +106,7 @@ export const UBUNTU_ICONS_VALUES = {
                 ALT: "ubuntu chrome refresh"
             }
         },
-        COLOR:{
+        COLOR: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-color-symbolic.svg",
             ALT: "ubuntu color"
         },
@@ -126,6 +130,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "display-brightness-symbolic.svg",
             ALT: "ubuntu display brightness"
         },
+        DISPLAY_SETTING: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-display-symbolic.svg",
+            ALT: "ubuntu display settings"
+        },
         DOCUMENT_EDIT: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "document-edit-symbolic.svg",
             ALT: "ubuntu document edit"
@@ -145,6 +153,10 @@ export const UBUNTU_ICONS_VALUES = {
         FOLDER_PUBLIC_SHARE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "folder-publicshare-symbolic.svg",
             ALT: "ubuntu sharing"
+        },
+        KEYBOARD: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-keyboard-symbolic.svg",
+            ALT: "ubuntu keyboard"
         },
         HELP: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "help-about-symbolic.svg",
@@ -166,6 +178,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "media-removable-symbolic.svg",
             ALT: "ubuntu removable media"
         },
+        MOUSE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "input-mouse-symbolic.svg",
+            ALT: "ubuntu mouse touch pad"
+        },
         NETWORK: {
             LOCAL: {
                 SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-locale-symbolic.svg",
@@ -176,6 +192,14 @@ export const UBUNTU_ICONS_VALUES = {
                 ALT: "ubuntu network preference"
             }
         },
+        NOTIFICATION: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-system-notifications-symbolic.svg",
+            ALT: "ubuntu notification"
+        },
+        ONLINE_ACCOUNTS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "weather-cloudy-symbolic.svg",
+            ALT: "ubuntu online accounts"
+        },
         ORANGE_HEX: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "cof_orange_hex.svg",
             ALT: "ubuntu orange hex icon"
@@ -183,6 +207,10 @@ export const UBUNTU_ICONS_VALUES = {
         POWER_BUTTON: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "power-button.svg",
             ALT: "ubuntu power button"
+        },
+        POWER_SETTING: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-system-power-symbolic.svg",
+            ALT: "ubuntu power setting"
         },
         PRINTER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "printer-symbolic.svg",
@@ -196,6 +224,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "projects.svg",
             ALT: "ubuntu projects"
         },
+        SEARCH: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-system-search-symbolic.svg",
+            ALT: "ubuntu search"
+        },
         SETTING: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "emblem-system-symbolic.svg",
             ALT: "ubuntu setting"
@@ -208,6 +240,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "skills.svg",
             ALT: "ubuntu skills"
         },
+        SOUND: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "music-note-symbolic.svg",
+            ALT: "ubuntu sound"
+        },
         SYSTEM_USERS: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "system-users-symbolic.svg",
             ALT: "ubuntu system users"
@@ -219,6 +255,10 @@ export const UBUNTU_ICONS_VALUES = {
         UBUNTU_WHITE_HEX: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "ubuntu_white_hex.svg",
             ALT: "ubuntu white hex"
+        },
+        UNIVERSAL_ACCESS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-accessibility-symbolic.svg",
+            ALT: "ubuntu universal access"
         },
         WIFI: {
             BASE: {

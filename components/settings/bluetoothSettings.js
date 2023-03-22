@@ -4,7 +4,7 @@ import AnimatedLoader from "../common/animatedLoader";
 import ToggleSwitch from '../util components/ToggleSwitch';
 
 const Bluetooth = (props) => {
-    const [bluetooth, setBluetooth] = useState(false);
+    const [bluetooth, setBluetooth] = useState(true);
     const [bluetoothAvailableListState, setBluetoothAvailableListState] = useState(BLUETOOTH_AVAILABLE_LIST);
     const toggleBluetoothActive = () => {
         const prevState = bluetooth;
