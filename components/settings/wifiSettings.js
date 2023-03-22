@@ -2,30 +2,31 @@ import { useState } from "react";
 import { WIFI_AVAILABLE_LIST,WIFI_SIGNALS } from './constants';
 import AnimatedLoader from "../common/animatedLoader";
 import ToggleSwitch from '../util components/ToggleSwitch';
+import { UBUNTU_ICONS } from "../../apps.config";
 
 const Wifi = (props) => {
     const [airPlaneMode, setAirPlaneMode] =  useState(false);
 
     const getWifiSignalIcon = (signalStrength)=> {
-        let icon = "./themes/Yaru/status/network-wireless-signal-good-symbolic.svg";
+        let icon = UBUNTU_ICONS.STATUS.WIFI.GOOD;
         switch(signalStrength){
             case WIFI_SIGNALS.EXCELLENT:
-                icon=  "./themes/Yaru/status/network-wireless-signal-excellent-symbolic.svg";
+                icon=  UBUNTU_ICONS.STATUS.WIFI.EXCELLENT;
                 break;
             case WIFI_SIGNALS.GOOD:
-                icon=  "./themes/Yaru/status/network-wireless-signal-good-symbolic.svg";
+                icon=  UBUNTU_ICONS.STATUS.WIFI.GOOD;
                 break;
             case WIFI_SIGNALS.OK:
-                icon=  "./themes/Yaru/status/network-wireless-signal-ok-symbolic.svg";
+                icon=  UBUNTU_ICONS.STATUS.WIFI.OK;
                 break;
             case WIFI_SIGNALS.WEAK:
-                icon=  "./themes/Yaru/status/network-wireless-signal-weak-symbolic.svg";
+                icon=  UBUNTU_ICONS.STATUS.WIFI.WEAK;
                 break;
             case WIFI_SIGNALS.NONE:
-                icon=  "./themes/Yaru/status/network-wireless-signal-none-symbolic.svg";
+                icon=  UBUNTU_ICONS.STATUS.WIFI.NONE;
                 break;
             default:
-                icon = "./themes/Yaru/status/network-wireless-signal-good-symbolic.svg";
+                icon = UBUNTU_ICONS.STATUS.WIFI.GOOD;
                 break;
         }
         return icon;
@@ -73,18 +74,18 @@ const Wifi = (props) => {
                                 <div className="md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5">
                                     <div className="w-2/3 flex items-center justify-start px-4">
                                         <div className="w-8">
-                                            <img width="16px" height="16px" src={wifiStrength} alt="ubuntu wifi" />
+                                            <img width="16px" height="16px" src={wifiStrength.SRC} alt={wifiStrength.ALT} />
                                         </div>
                                         <span>{wifiUnit.name}</span>
                                         {wifiUnit.connected &&
                                             <div className="w-8">
-                                                <img width="16px" height="16px" src="./themes/Yaru/emblems/emblem-ok-symbolic.svg" alt="ubuntu wifi" />
+                                                <img width="16px" height="16px" src={UBUNTU_ICONS.EMBLEMS.EMBLEM_OK.SRC} alt={`${UBUNTU_ICONS.EMBLEMS.EMBLEM_OK.ALT} wifi`} />
                                             </div>
                                         }
                                     </div>
                                     {wifiUnit.secured &&
                                         <div className="w-8">
-                                            <img width="16px" height="16px" src="./themes/Yaru/status/changes-prevent-symbolic.svg" alt="ubuntu wifi" />
+                                            <img width="16px" height="16px" src={UBUNTU_ICONS.STATUS.LOCK.SRC} alt={UBUNTU_ICONS.STATUS.LOCK.ALT} />
                                         </div>
                                     }
                                 </div>
@@ -96,7 +97,7 @@ const Wifi = (props) => {
             {airPlaneMode &&
                 // <>
                     <div className="m-auto flex flex-grow flex-col justify-center items-center">
-                        <img className="w-64" src="./themes/Yaru/status/airplane-mode-symbolic.svg" alt="Ubuntu Airplane Mode" />
+                        <img className="w-64" src={UBUNTU_ICONS.STATUS.AIRPLANE_MODE.SRC} alt={UBUNTU_ICONS.STATUS.AIRPLANE_MODE.ALT} />
                         <span className="font-bold mt-4 text-lg px-1">Airplane Mode On</span>
                         <p  className="text-md px-1 text-gray-400">Turn off to use Wi-Fi</p>
                     </div>

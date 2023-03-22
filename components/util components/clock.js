@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { APP_CONSTANTS, APP_SEPERATORS, MONTH_LIST, TIME_MERIDIEM, WEEK_DAYS_LIST } from '../../apps.config';
+import { APP_CONSTANTS, APP_SEPARATORS, MONTH_LIST, TIME_MERIDIEM, WEEK_DAYS_LIST } from '../../apps.config';
 
 export default class Clock extends Component {
     constructor() {
@@ -40,12 +40,12 @@ export default class Clock extends Component {
 
         let display_time;
         if (this.props.onlyTime) {
-            display_time = hour + APP_SEPERATORS.TIME_SEPERATOR + minute + APP_SEPERATORS.BLACK_SEPERATOR + meridiem;
+            display_time = hour + APP_SEPARATORS.TIME_SEPARATOR + minute + APP_SEPARATORS.BLANK_SEPARATOR + meridiem;
         }
         else if (this.props.onlyDay) {
-            display_time = day + APP_SEPERATORS.BLACK_SEPERATOR + month + APP_SEPERATORS.BLACK_SEPERATOR + date;
+            display_time = day + APP_SEPARATORS.BLANK_SEPARATOR + month + APP_SEPARATORS.BLANK_SEPARATOR + date;
         }
-        else display_time = day + APP_SEPERATORS.BLACK_SEPERATOR + month + APP_SEPERATORS.BLACK_SEPERATOR + date + APP_SEPERATORS.BLACK_SEPERATOR + hour + APP_SEPERATORS.TIME_SEPERATOR + minute + APP_SEPERATORS.BLACK_SEPERATOR + meridiem;
+        else display_time = day + APP_SEPARATORS.BLANK_SEPARATOR + month + APP_SEPARATORS.BLANK_SEPARATOR + date + APP_SEPARATORS.BLANK_SEPARATOR + hour + APP_SEPARATORS.TIME_SEPARATOR + minute + APP_SEPARATORS.BLANK_SEPARATOR + meridiem;
         return <span>{display_time}</span>;
     }
 }

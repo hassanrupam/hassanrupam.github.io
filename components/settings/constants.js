@@ -1,3 +1,5 @@
+import { UBUNTU_ICONS } from "../../apps.config"
+
 export const SETTING_PAGES = {
     WIFI: {
         text: "Wi-Fi",
@@ -168,5 +170,4 @@ export const USERS_LIST = [
         isAdmin: true,
         isLoggedIn: false
     },
-   
 ]
