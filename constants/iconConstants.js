@@ -119,7 +119,7 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu date time"
         },
         DEFAULT_APP: {
-            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "configurator-app-symbolic.svg",
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "starred-symbolic.svg",
             ALT: "ubuntu default application"
         },
         DESKTOP_PANEL: {
