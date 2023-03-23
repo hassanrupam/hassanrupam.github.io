@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { APP_CONSTANTS } from "../../apps.config";
+import { APP_CONSTANTS, UBUNTU_ICONS } from "../../apps.config";
 import UnlockHeader from "./unlockHead";
 
 const AboutPc = (props) => {
@@ -14,13 +14,16 @@ const AboutPc = (props) => {
             setVisible(false)
         }
     },[visible])    
+
+    const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
+    const orangeHexIcon = UBUNTU_ICONS.STATUS.ORANGE_HEX;
     
     return (
         <>
            <UnlockHeader triggerActive = {visible}/>
             <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={()=>{handleClick()}}>
                 <div className="w-4/4 flex flex-grow flex-col items-center justify-between p-2">
-                    <img width="200px" height="200px" className="md:w-1/4 w-1/2" src="./themes/Yaru/status/cof_orange_hex.svg" alt="Ubuntu Logo" />
+                    <img width="200px" height="200px" className="md:w-1/4 w-1/2" src={orangeHexIcon.SRC} alt={`Ubuntu Logo ${orangeHexIcon.ALT}`} />
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500" onClick={handleClick}>
@@ -30,7 +33,7 @@ const AboutPc = (props) => {
                     <div className="w-64 text-xs text-gray-400 flex justify-end">
                         <span>rupam@ROG-Zephyrus G14</span>
                         <div className="w-4 opacity-50">
-                            <img width="16px" height="16px" src="./themes/Yaru/emblems/pan-end-symbolic.svg" alt="ubuntu device name" />
+                            <img width="16px" height="16px" src={panEndIcon.SRC} alt={`ubuntu device name ${panEndIcon.ALT}`} />
                         </div>
                     </div>
                 </div>
@@ -116,7 +119,7 @@ const AboutPc = (props) => {
                     <div className="w-32 text-xs text-gray-400 flex justify-end">
                         <span>{APP_CONSTANTS.VERSION}</span>
                         <div className="w-4 opacity-50">
-                            <img width="16px" height="16px" src="./themes/Yaru/emblems/pan-end-symbolic.svg" alt="ubuntu system version" />
+                            <img width="16px" height="16px" src={panEndIcon.SRC} alt={`ubuntu system version ${panEndIcon.ALT}`} />
                         </div>
                     </div>
                 </div>                
