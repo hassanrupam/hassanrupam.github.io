@@ -42,6 +42,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             {
                 id:"861mj3t92",
                 title:"Change static Icons to Var in about settings"
+            },
+            {
+                id: "861mj3t77",
+                title: "Design Color Settings"
             }
         ]
     },

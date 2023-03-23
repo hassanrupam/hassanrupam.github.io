@@ -14,6 +14,7 @@ import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING
 import secureLocalStorage from "react-secure-storage";
 import RemovableMedia from './removableMedia';
 import VersionInformation from './versionInfo';
+import Color from './colorSettings';
 
 
 export class Settings extends Component {
@@ -43,7 +44,8 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.DEFAULT_APP]: <DefaultApplications />,
             [APPLICATION_UNIQUE_ID.SETTINGS.DATE_TIME]: <DateTime />,
             [APPLICATION_UNIQUE_ID.SETTINGS.ABOUT]: <AboutPc />,
-            [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />
+            [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -69,7 +71,8 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.DEFAULT_APP]: <DefaultApplications />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.DATE_TIME]: <DateTime />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.ABOUT]: <AboutPc />,
-                [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />
+                [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
