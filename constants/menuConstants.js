@@ -202,5 +202,13 @@ export const UBUNTU_SETTINGS_MENU_PROPS = [
         ICON: UBUNTU_ICONS_VALUES.STATUS.ABOUT,
         ALT: "about setting",
         isActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
+    },
+    {
+        SERIAL: 26,
+        MENU_NAME: "Version Information",
+        ID: APPLICATION_UNIQUE_ID_KEY_CONSTANTS.SETTINGS.VERSION,
+        ICON: UBUNTU_ICONS_VALUES.STATUS.VERSION,
+        ALT: "version setting",
+        isActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
     }
 ]

@@ -260,6 +260,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-accessibility-symbolic.svg",
             ALT: "ubuntu universal access"
         },
+        VERSION: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "strong-language-symbolic.svg",
+            ALT: "ubuntu version"
+        },
         WIFI: {
             BASE: {
                 SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "network-wireless-symbolic.svg",
