@@ -10,7 +10,7 @@ import AboutPc from './aboutPc';
 import DateTime from './dateTime';
 import DefaultApplications from './defaultApplications';
 import Users from './users';
-import { APPLICATION_UNIQUE_ID, SECURE_STORAGE_STORE_KEY, SETTING_MENU } from '../../apps.config';
+import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING_MENU } from '../../apps.config';
 import secureLocalStorage from "react-secure-storage";
 import RemovableMedia from './removableMedia';
 
@@ -24,7 +24,8 @@ export class Settings extends Component {
         this.state = {
             screen: () => { },
             active_screen: APPLICATION_UNIQUE_ID.SETTINGS.WIFI, // by d.efault 'background' screen is active
-            navbar: false
+            navbar: false,
+            hideScroll: false
         }
         secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.USER_SELECTED, "G");
     }
@@ -42,6 +43,9 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.DATE_TIME]: <DateTime />,
             [APPLICATION_UNIQUE_ID.SETTINGS.ABOUT]: <AboutPc />
         }
+        setTimeout(() => {
+            this.setState({ hideScroll: true})
+        }, APP_CONSTANTS.TIME_OUTS.SECONDS_2);
 
         let lastVisitedScreen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_SECTION);
         if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
@@ -125,7 +129,13 @@ export class Settings extends Component {
     render() {
         return (
             <div className="w-full h-full flex bg-ub-cool-grey text-white select-none relative">
-                <div className="md:flex hidden flex-col w-1/4 md:w-1/5 text-sm overflow-y-auto windowMainScreen border-r border-black" style={{marginBottom:"3rem"}}>
+                <div className={`md:flex hidden flex-col w-1/4 md:w-1/5 text-sm overflow-y-auto windowMainScreen border-r border-black ${this.state.hideScroll && 'scrollbar-hide'}`} 
+                     style={{marginBottom:"3rem"}}
+                     onMouseEnter={()=> {this.setState({hideScroll:false})}}
+                     onMouseOver={()=> {this.setState({hideScroll:false})}}
+                     onMouseLeave={()=> {setTimeout(() => {
+                        this.setState({hideScroll:true});
+                     }, APP_CONSTANTS.TIME_OUTS.SECONDS_2);}}>
                     {this.renderNavLinks()}
                 </div>
                 <div onClick={this.showNavBar} className="md:hidden flex flex-col items-center justify-center absolute bg-ub-cool-grey rounded w-6 h-6 top-1 left-1 overflow-y-auto">
