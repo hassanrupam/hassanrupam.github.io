@@ -17,12 +17,12 @@ const VersionInformation = (props) => {
                     .map((version, index) => {
                         return (
                             <a key={index} rel="noreferrer" className="flex w-full flex-col px-4">
-                                <div className="w-full py-1 px-2 my-1 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
-                             s       <div className="flex flex-wrap justify-between items-center">
+                                <div className="w-full py-0.5 px-2 my-1 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
+                                    <div className="flex flex-wrap justify-between items-center">
                                         <div className='flex justify-center items-center'>
-                                            <div className=" text-3xl mr-2">{version.version}</div>
+                                            <div className=" text-2xl font-bold mr-2">{version.version}</div>
                                         </div>
-                                        <div className="font-light text-sm">{version.date}</div>
+                                        <div className="font-bold text-sm">{version.date}</div>
                                     </div>
                                     <ul className=" tracking-normal leading-tight text-sm font-light ml-4 mt-1">
                                         {

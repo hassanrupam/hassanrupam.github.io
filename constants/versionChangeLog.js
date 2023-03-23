@@ -50,6 +50,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             {
                 id: "861mj3t2m",
                 title: "Design Network Settings"
+            },
+            {
+                id: "861mj3t6a",
+                title: "Design Displays Settings"
             }
         ]
     },

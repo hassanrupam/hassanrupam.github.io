@@ -16,6 +16,7 @@ import RemovableMedia from './removableMedia';
 import VersionInformation from './versionInfo';
 import Color from './colorSettings';
 import Network from './networkSettings';
+import Displays from './displaySettings';
 
 
 export class Settings extends Component {
@@ -47,7 +48,8 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.ABOUT]: <AboutPc />,
             [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
             [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />,
-            [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />
+            [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -75,7 +77,8 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.ABOUT]: <AboutPc />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />,
-                [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />
+                [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
