@@ -9,6 +9,8 @@ module.exports = {
       'ub-warm-grey': "#AEA79F",
       'ub-cool-grey': "#333333",
       'ub-cool-grey-light': "#444444",
+      'ub-cool-grey-lighter': "#555555",
+      'ub-cool-grey-lightest': "#666666",
       'ub-orange': "#E95420",
       'ub-lite-abrgn': "#77216F",
       'ub-med-abrgn': "#5E2750",

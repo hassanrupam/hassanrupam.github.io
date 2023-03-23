@@ -227,7 +227,7 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     border: 1px solid #000;
     border-radius: 20px;
     cursor: pointer;
-    height: 24px;
+    height: 28px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -259,7 +259,7 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     height: 24px;
     left: 46%;
     position: relative;
-    /* top: 4px; */
+    top: 1px;
     width: 24px;
     z-index: 3;
     transition: 1s ease-in-out
