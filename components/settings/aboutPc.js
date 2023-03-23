@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { APP_CONSTANTS } from "../../apps.config";
 import UnlockHeader from "./unlockHead";
 
 const AboutPc = (props) => {
@@ -110,18 +111,15 @@ const AboutPc = (props) => {
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5
                 focus-within:outline-none focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-500" onClick={handleClick}>
                     <div className="w-2/3 flex items-center justify-start px-4">
-                        <span>Software Updates</span>
+                        <span>Software Version</span>
                     </div>
                     <div className="w-32 text-xs text-gray-400 flex justify-end">
+                        <span>{APP_CONSTANTS.VERSION}</span>
                         <div className="w-4 opacity-50">
-                            <img width="16px" height="16px" src="./themes/Yaru/emblems/pan-end-symbolic.svg" alt="ubuntu system update" />
+                            <img width="16px" height="16px" src="./themes/Yaru/emblems/pan-end-symbolic.svg" alt="ubuntu system version" />
                         </div>
                     </div>
-                </div>
-
-
-
-                
+                </div>                
             </div>
         </>
     )

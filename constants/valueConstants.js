@@ -8,6 +8,7 @@ import { displayTrash } from "../components/apps/trash";
 import { displayVsCode } from "../components/apps/vscode";
 import { displaySettings } from "../components/settings";
 import { UBUNTU_ICONS_VALUES } from "./iconConstants";
+import { APPLICATION_VERSION } from "./versionChangeLog";
 
 export const APPLICATION_EVENTS_VALUES = {
     CLICK: "click",
@@ -72,7 +73,8 @@ export const APP_CONSTANTS_VALUES = {
         MEDIUM: "md",
         LARGE: "lg",
         EXTRA_LARGE: "xl"
-    }
+    },
+    VERSION: APPLICATION_VERSION
 }
 
 export const APP_SEPARATORS_VALUES = {
