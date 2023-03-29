@@ -21,7 +21,7 @@ const Education = (props) => {
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
                         Bachelor of Science in Computer Science & Engineering
                     </div>
-                    <div className=" text-sm text-gray-400 mt-0.5">2013 - 2014</div>
+                    <div className=" text-sm text-gray-400 mt-0.5">2015 - 2018</div>
                     <div className=" text-sm md:text-base"> International University of Business Agriculture & Technology, Dhaka, Bangladesh</div>
                     <div className="text-sm text-gray-300 font-bold mt-1">CGPA &nbsp; 3.95 (out of 4)</div>
                 </li>
