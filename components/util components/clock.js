@@ -14,8 +14,8 @@ export default class Clock extends Component {
 
     componentDidMount() {
         this.update_time = setInterval(() => {
-            this.setState({ current_time: APP_CONSTANTS.TODAY });
-        }, 10 * 1000);
+            this.setState({ current_time: new Date() });
+        }, 6 * APP_CONSTANTS.TIME_OUTS.SECONDS_10);
     }
 
     componentWillUnmount() {

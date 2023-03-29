@@ -17,7 +17,7 @@ const About = (props)=> {
             <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
                 <li className=" list-pc">I graduated in 2018 from <span className=" font-medium"> International University of Business Agriculture and Technology </span> and currently pursuing Computer Science. I've completed my 6 month intern at <u className=' cursor-pointer '> <a href="https://youngbangla.org/ms-yb-initiatives/" target={"_blank"}>Microsoft Young Bangla</a> </u>, and now working in <u className=' cursor-pointer '> <a href="https://www.bkash.com/" target={"_blank"}>bKash</a> </u> as Data Science Engineer! ( Hit me up <a className='text-underline' href='mailto:hassanrupam@gmail.com'><u>@hassanrupam@gmail.com</u></a> :) )</li>
                 <li className=" mt-3 list-building"> I enjoy building awesome softwares that solve practical problems.</li>
-                <li className=" mt-3 list-time"> When I am not coding my next project, I like to spend my time reading books, playing guiter or watching <a href="https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A" target="_blank" rel="noreferrer"> tom scott's videos.</a></li>
+                <li className=" mt-3 list-time"> When I am not coding my next project, I like to spend my time reading books, playing guitar or watching <a href="https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A" target="_blank" rel="noreferrer"> tom scott's videos.</a></li>
                 <li className=" mt-3 list-star"> And I also have interest in Machine Learning & Data Science!</li>
             </ul>
         </>
