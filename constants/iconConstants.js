@@ -10,6 +10,22 @@ export const APPLICATION_BASE_PATH_VALUES = {
 
 export const UBUNTU_ICONS_VALUES = {
     APPS: {
+        ADOBE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "adobe.png",
+            ALT: "ubuntu app adobe acrobat"
+        },
+        ARCHIVE : {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "zip.png",
+            ALT: "ubuntu app archive"
+        },
+        BACKUP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "backups-app.png",
+            ALT: "ubuntu app backup"
+        },
+        COLOR: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-color.png",
+            ALT: "ubuntu app color"
+        },
         CALCULATOR: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "calc.png",
             ALT: "ubuntu app calculator"
@@ -18,13 +34,53 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "chrome.png",
             ALT: "ubuntu app chrome"
         },
+        DATE_TIME:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-system-time.png",
+            ALT: "ubuntu app date time"
+        },
+        DBEAVER:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "DBeaver-Logo.png",
+            ALT: "ubuntu app dbeaver-ce"
+        },
+        DISC_USAGE_APP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "disk-usage-app.png",
+            ALT: "ubuntu app disk usage"
+        },
         IMAGE_VIEWER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "image-viewer-app.png",
             ALT: "ubuntu app image-viewer"
         },
+        INTELLIJ:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "IntelliJ_IDEA_Icon.png",
+            ALT: "ubuntu app intelliJ"
+        },
         AUDIO_APP: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "rhythmbox.png",
             ALT: "ubuntu app audio player rhythmbox"
+        },
+        LIBRE_OFFICE:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "libre_office_calc.png",
+            ALT: "ubuntu app libre office calc"
+        },
+        NETWORK_LAN: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-system-network.png",
+            ALT: "ubuntu app network"
+        },
+        NETWORK_WIFI: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "network.png",
+            ALT: "ubuntu app network cellular wifi"
+        },
+        PRINTER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "printer.png",
+            ALT: "ubuntu app printer"
+        },
+        POWER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "power.png",
+            ALT: "ubuntu app power"
+        },
+        REPORT: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "dialog-warning.png",
+            ALT: "ubuntu app power"
         },
         SETTING: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "gnome-control-center.png",

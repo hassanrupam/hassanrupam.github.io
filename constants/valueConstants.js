@@ -74,6 +74,16 @@ export const APP_CONSTANTS_VALUES = {
         LARGE: "lg",
         EXTRA_LARGE: "xl"
     },
+    SWITCH: {
+        ON: {
+            LABEL: "On",
+            VALUE: true
+        },
+        OFF: {
+            LABEL: "Off",
+            VALUE: false
+        }
+    },
     VERSION: APPLICATION_VERSION
 }
 
@@ -190,5 +200,146 @@ export const REMOVABLE_MEDIA_OPTIONS_VALUES = [
         optionName: "Run Software",
         optionIcon: UBUNTU_ICONS_VALUES.SYSTEM.VIEW_APP_GRID.SRC
     },
-    
+]
+
+
+export const NOTIFICATION_APPLICATION_LIST_VALUES = [
+   {
+    SERIAL: 1,
+    appName: "Adobe Acrobat Reader DC",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.ADOBE,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 2,
+    appName: "Archive Manager",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.ARCHIVE,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 3,
+    appName: "Backups",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.BACKUP,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 4,
+    appName: "Color",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.COLOR,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 5,
+    appName: "Date & Time",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.DATE_TIME,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 6,
+    appName: "dbeaver-ce",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.DBEAVER,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 7,
+    appName: "Desktop Sharing",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.IMAGE_VIEWER,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 8,
+    appName: "Disk Usage Analyzer",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.DISC_USAGE_APP,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 9,
+    appName: "Files",
+    appIcon: UBUNTU_ICONS_VALUES.SYSTEM.FOLDER,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 10,
+    appName: "Google Chrome",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.CHROME,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 11,
+    appName: "IntelliJ IDEA Ultimate Edition",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.INTELLIJ,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 12,
+    appName: "LibreOffice Calc",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.LIBRE_OFFICE,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 13,
+    appName: "Network",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.NETWORK_LAN,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 14,
+    appName: "Network",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.NETWORK_WIFI,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 15,
+    appName: "Portal",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.SETTING,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 16,
+    appName: "Power",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.POWER,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 17,
+    appName: "Printers",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.PRINTER,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 18,
+    appName: "Report a problem...",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.REPORT,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 19,
+    appName: "Rhythmbox",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.AUDIO_APP,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 20,
+    appName: "Settings",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.SETTING,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 21,
+    appName: "Terminal",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.TERMINAL,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 22,
+    appName: "Text Editor",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.TEXT_EDITOR,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
+   {
+    SERIAL: 23,
+    appName: "Visual Studio Code",
+    appIcon: UBUNTU_ICONS_VALUES.APPS.VSCODE,
+    appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
+   },
 ]

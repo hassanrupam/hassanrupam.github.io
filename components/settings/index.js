@@ -17,6 +17,7 @@ import VersionInformation from './versionInfo';
 import Color from './colorSettings';
 import Network from './networkSettings';
 import Displays from './displaySettings';
+import Notification from './notificationSettings';
 
 
 export class Settings extends Component {
@@ -49,7 +50,8 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
             [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />,
             [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
-            [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />
+            [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.NOTIFICATION]: <Notification />,
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -78,7 +80,8 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.VERSION]: <VersionInformation />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.COLOR]: <Color />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
-                [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />
+                [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.NOTIFICATION]: <Notification />,
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
