@@ -81,7 +81,7 @@ const AboutPc = (props) => {
                         <span>OS Name</span>
                     </div>
                     <div className="w-32 text-xs text-gray-400 flex justify-end">
-                        <span>Ubuntu 20.04.5 LTS</span>
+                        <span>Ubuntu 22.04.5 LTS</span>
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-4 flex items-center justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5

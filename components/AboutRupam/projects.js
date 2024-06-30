@@ -5,7 +5,7 @@ const Projects = (props) => {
             date: "Mar 2023",
             link: "https://github.com/hassanrupam/hassanrupam.github.io",
             description: [
-                "Personal portfolio website of theme Ubuntu 20.04, made using NEXT.js & tailwind CSS",
+                "Personal portfolio website of theme Ubuntu 22.04, made using NEXT.js & tailwind CSS",
             ],
             domains: ["javascript", "next.js", "tailwindcss"]
         },

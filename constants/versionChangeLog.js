@@ -2,7 +2,7 @@
 /**
  * Software Version Information
  */
-export const APPLICATION_VERSION = "0.1.0"
+export const APPLICATION_VERSION = "0.1.2"
 
 
 /**
@@ -16,7 +16,7 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
         taskList: [
             {
                 id: "",
-                title: "Personal portfolio website of theme Ubuntu 20.04, made using NEXT.js & tailwind CSS Base version"
+                title: "Personal portfolio website of theme Ubuntu 22.04, made using NEXT.js & tailwind CSS Base version"
             },
         ]
     },
