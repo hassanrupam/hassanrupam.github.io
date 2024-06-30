@@ -356,3 +356,48 @@ export const NOTIFICATION_APPLICATION_LIST_VALUES = [
     appNotificationOption: APP_CONSTANTS_VALUES.SWITCH.ON.LABEL
    },
 ]
+
+export const SEARCH_SETTING_ITEM_LIST_VALUES = [
+    {
+     SERIAL: 1,
+     appName: "Files",
+     appIcon: UBUNTU_ICONS_VALUES.SYSTEM.FOLDER,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 2,
+     appName: "Calculator",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.CALCULATOR,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 3,
+     appName: "Calendar",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.CALENDAR,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 4,
+     appName: "Characters",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.CHARACTERS,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 5,
+     appName: "Font Manager",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.FONT_MANAGER,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 6,
+     appName: "Password and Keys",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.PASSWORDS,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+     SERIAL: 7,
+     appName: "Terminal",
+     appIcon: UBUNTU_ICONS_VALUES.APPS.TERMINAL,
+     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+ ]

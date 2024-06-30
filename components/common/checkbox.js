@@ -2,7 +2,9 @@ import React from "react";
 
 const Checkbox = props => {
   const handleCheck = () => {
-    props.onCheck(!props.check);
+    if(!props.disabled){
+      props.onCheck(!props.check);
+    }
   };
 
   return (

@@ -7,7 +7,7 @@ import UnlockHeader from "./unlockHead";
 
 const RemovableMedia = (props) => {
 
-    const [restricted, setRestricted] = useState(false);
+    const [restricted, setRestricted] = useState(true);
     const [visible, setVisible] = useState(false);
 
     const handleAllowedChange = () => {
@@ -70,6 +70,7 @@ const RemovableMedia = (props) => {
                         <Checkbox
                             label={"Never prompt or start program on media insertion"}
                             check={restricted}
+                            disabled ={true}
                             onCheck={() => { handleAllowedChange() }}
                         />}
                 </div>

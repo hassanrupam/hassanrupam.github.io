@@ -66,6 +66,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "9Fd7kA2zX",
                 title: "Add Appearance Settings"
             },
+            {
+                id: "7F9D2G6HJ",
+                title: "Add Search Settings"
+            },   
         ]
     },
 ];

@@ -27,8 +27,16 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu app color"
         },
         CALCULATOR: {
-            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "calc.png",
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "calculator-app.png",
             ALT: "ubuntu app calculator"
+        },
+        CALENDAR: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "calendar-app.png",
+            ALT: "ubuntu app calendar"
+        },
+        CHARACTERS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "accessories-character-map.png",
+            ALT: "ubuntu app characters"
         },
         CHROME: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "chrome.png",
@@ -45,6 +53,10 @@ export const UBUNTU_ICONS_VALUES = {
         DISC_USAGE_APP: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "disk-usage-app.png",
             ALT: "ubuntu app disk usage"
+        },
+        FONT_MANAGER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-desktop-font.png",
+            ALT: "ubuntu app font manager"
         },
         IMAGE_VIEWER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "image-viewer-app.png",
@@ -73,6 +85,10 @@ export const UBUNTU_ICONS_VALUES = {
         PRINTER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "printer.png",
             ALT: "ubuntu app printer"
+        },
+        PASSWORDS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "passwords-app.png",
+            ALT: "ubuntu app power"
         },
         POWER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "power.png",
@@ -123,7 +139,15 @@ export const UBUNTU_ICONS_VALUES = {
         EMBLEM_PAN_DOWN: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "pan-down-symbolic.svg",
             ALT: "ubuntu pan end"
-        }
+        },
+        EMBLEM_LIST_DRAG_ICON: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "list-drag-handle-symbolic.svg",
+            ALT: "ubuntu pan end"
+        },
+        VIEW_MORE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "view-more-symbolic.svg",
+            ALT: "ubuntu pan end"
+        },
     },
     STATUS: {
         ABOUT: {
