@@ -165,11 +165,11 @@ export const UBUNTU_SETTINGS_MENU_PROPS = [
     },
     {
         SERIAL: 21,
-        MENU_NAME: "Universal Access",
+        MENU_NAME: "Accessibility",
         ID: APPLICATION_UNIQUE_ID_KEY_CONSTANTS.SETTINGS.UNIVERSAL_ACCESS,
         ICON: UBUNTU_ICONS_VALUES.STATUS.UNIVERSAL_ACCESS,
         ALT: "universal access setting",
-        isActive: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+        isActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
     },
     {
         SERIAL: 22,

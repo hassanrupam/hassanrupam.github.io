@@ -10,22 +10,22 @@ const Search = (props) => {
     const viewMoreIcon = UBUNTU_ICONS.EMBLEMS.VIEW_MORE;
 
 
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
 
     const handleClick = () => {
-        setVisible(true);
+        setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
     }
 
     useEffect(() => {
         if (visible) {
-            setVisible(false)
+            setVisible(APP_CONSTANTS.BOOLEAN.FALSE)
         }
     }, [visible])
 
     return(
         <>
         <UnlockHeader triggerActive={visible} />
-            <div className={"w-full h-full flex-col justify-center flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
                 <div className={`md:w-3/4 w-2/3 m-auto  pb-4 flex flex-col items-center justify-between pt-8 ${visible ? 'opacity-30' : 'opacity-50'}`}>
                     <span>Control which search results are shown in the Activities Overview. The order of search results can also be changed by moving rows in the list.</span>
                 </div>

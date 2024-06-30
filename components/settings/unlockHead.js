@@ -24,7 +24,7 @@ const UnlockHeader = (props) => {
 
     return(
         <>
-         <div className={"w-full h-14 flex-col flex-grow z-20 max-h-14 overflow-y-auto windowMainScreen select-none bg-ub-cool"}>
+         <div className={"w-full h-14 flex-col flex-grow z-20 max-h-14 windowMainScreen select-none bg-ub-cool"}>
                 <div className="w-4/4 flex items-center justify-between p-2">
                     <div className="w-4/4 flex items-center justify-start">
                         <div className="w-8">

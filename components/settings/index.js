@@ -20,6 +20,7 @@ import Displays from './displaySettings';
 import Notification from './notificationSettings';
 import Appearance from './appearanceSettings';
 import Search from './searchSettings';
+import Accessibility from './accessibilitySettings';
 
 
 export class Settings extends Component {
@@ -56,6 +57,7 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
             [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />,
             [APPLICATION_UNIQUE_ID.SETTINGS.NOTIFICATION]: <Notification />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.UNIVERSAL_ACCESS]: <Accessibility />,
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -88,6 +90,7 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.NETWORK]: <Network />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.DISPLAYS]: <Displays />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.NOTIFICATION]: <Notification />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.UNIVERSAL_ACCESS]: <Accessibility />,
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);

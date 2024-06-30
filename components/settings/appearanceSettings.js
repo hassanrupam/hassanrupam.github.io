@@ -9,15 +9,15 @@ const Appearance = (props) => {
 
     const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
 
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
 
     const handleClick = () => {
-        setVisible(true);
+        setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
     }
 
     useEffect(() => {
         if (visible) {
-            setVisible(false)
+            setVisible(APP_CONSTANTS.BOOLEAN.FALSE)
         }
     }, [visible])
 
@@ -45,8 +45,8 @@ const Appearance = (props) => {
                 </div>
                 <div className="md:w-3/4 w-2/3 m-auto my-4 bg-ub-cool-grey p-4">
                     <div className="flex pt-4 justify-evenly space-x-8">
-                            <ThemeCard theme="Light" selected={false} />
-                            <ThemeCard theme="Dark" selected={true} />
+                            <ThemeCard theme="Light" selected={APP_CONSTANTS.BOOLEAN.FALSE} />
+                            <ThemeCard theme="Dark" selected={APP_CONSTANTS.BOOLEAN.TRUE} />
                     </div>
                     <div className="flex pt-6 space-x-2 ">
                         <span className='w-4/4 flex items-center justify-between'>Color</span>
@@ -100,11 +100,11 @@ const Appearance = (props) => {
                         <span className="w-64  flex items-center justify-end">
                             <ToggleSwitch
                                 description={""}
-                                checked={true}
+                                checked={APP_CONSTANTS.BOOLEAN.TRUE}
                                 activeLabel={""}
                                 deactiveLabel={""}
                                 size={'default'}
-                                disabled={true}
+                                disabled={APP_CONSTANTS.BOOLEAN.TRUE}
                                 onChange={() => {}}
                                 offstyle="switch-off"
                                 onstyle="switch-on"
@@ -124,11 +124,11 @@ const Appearance = (props) => {
                         <span className="w-64  flex items-center justify-end">
                             <ToggleSwitch
                                 description={""}
-                                checked={true}
+                                checked={APP_CONSTANTS.BOOLEAN.TRUE}
                                 activeLabel={""}
                                 deactiveLabel={""}
                                 size={'default'}
-                                disabled={true}
+                                disabled={APP_CONSTANTS.BOOLEAN.TRUE}
                                 onChange={() => {}}
                                 offstyle="switch-off"
                                 onstyle="switch-on"
@@ -145,11 +145,11 @@ const Appearance = (props) => {
                         <span className="w-64  flex items-center justify-end">
                             <ToggleSwitch
                                 description={""}
-                                checked={true}
+                                checked={APP_CONSTANTS.BOOLEAN.TRUE}
                                 activeLabel={""}
                                 deactiveLabel={""}
                                 size={'default'}
-                                disabled={true}
+                                disabled={APP_CONSTANTS.BOOLEAN.TRUE}
                                 onChange={() => {}}
                                 offstyle="switch-off"
                                 onstyle="switch-on"
@@ -162,7 +162,7 @@ const Appearance = (props) => {
                         <span>Icon Size</span>
                     </div>
                     <div className="w-2/3 flex justify-end">
-                         <Slider initialValue={48} minValue={16} maxValue={64} disabled={true}/>
+                         <Slider showValue={APP_CONSTANTS.BOOLEAN.TRUE} initialValue={48} minValue={16} maxValue={64} disabled={APP_CONSTANTS.BOOLEAN.TRUE}/>
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >

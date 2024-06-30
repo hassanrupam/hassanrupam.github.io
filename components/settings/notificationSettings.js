@@ -21,7 +21,7 @@ const Notification = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"text-sm w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light pt-4"} style={{paddingBottom:"3rem"}} onClick={() => { handleClick() }}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{paddingBottom:"3rem"}} onClick={() => { handleClick() }}>
                 <div className=" md:w-3/4 w-2/3 m-auto bg-ub-cool-grey p-4">
                     <span className='w-4/4 flex items-center justify-between font-bold '>Do Not Disturb
                         <ToggleSwitch

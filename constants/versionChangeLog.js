@@ -70,6 +70,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "7F9D2G6HJ",
                 title: "Add Search Settings"
             },   
+            {
+                id: "7Gp2xK9H5",
+                title: "Add Accessibility Settings"
+            },   
         ]
     },
 ];

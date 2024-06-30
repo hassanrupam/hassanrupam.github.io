@@ -10,7 +10,7 @@ const Slider = (props) => {
 
     return (
         <div className='w-full flex flex-row items-center justify-center space-x-2'>
-            <h1>{value}</h1>
+            {props.showValue && <h1>{value}</h1>}
             <ReactSlider
                 className="horizontal-slider"
                 thumbClassName="example-thumb"
