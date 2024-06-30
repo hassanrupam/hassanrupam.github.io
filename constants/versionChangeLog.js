@@ -57,4 +57,15 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             }
         ]
     },
+    {
+        serial: 3,
+        version: "0.1.2",
+        date: "30-Jun-2024",
+        taskList: [
+            {
+                id: "9Fd7kA2zX",
+                title: "Add Appearance Settings"
+            },
+        ]
+    },
 ];

@@ -57,11 +57,30 @@ module.exports = {
     extend: {
       zIndex: {
         '-10': '-10',
+      },
+      outlineOffset: {
+        '2': '2px',
+        '4': '4px',
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      outlineOffset: ['focus', 'hover'], // Add variants if needed
+    }
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.outline-offset-2': {
+          'outline-offset': '2px',
+        },
+        '.outline-offset-4': {
+          'outline-offset': '4px',
+        },
+        // Add more utilities as needed
+      }
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    }
+  ],
 }

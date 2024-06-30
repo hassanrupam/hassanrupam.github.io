@@ -119,6 +119,10 @@ export const UBUNTU_ICONS_VALUES = {
         EMBLEM_PAN_END: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "pan-end-symbolic.svg",
             ALT: "ubuntu pan end"
+        },
+        EMBLEM_PAN_DOWN: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "pan-down-symbolic.svg",
+            ALT: "ubuntu pan end"
         }
     },
     STATUS: {

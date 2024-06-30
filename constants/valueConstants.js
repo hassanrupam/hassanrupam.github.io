@@ -34,6 +34,19 @@ export const BACKGROUND_WALLPAPERS_VALUES = {
     "wall-rupam": "./images/wallpapers/wall-rupam.webp",
 }
 
+export const COLOR_VALUES = {
+    BG_ORANGE : 'bg-orange-600',
+    BG_GRAY : 'bg-gray-500',
+    BG_GREEN : 'bg-green-500',
+    BG_LIME : 'bg-lime-700',
+    BG_TEAL : 'bg-teal-700',
+    BG_BLUE : 'bg-blue-700',
+    BG_PURPLE : 'bg-purple-600',
+    BG_PINK : 'bg-pink-500',
+    BG_RED : 'bg-red-500',
+}
+
+
 export const TIME_MERIDIEM_VALUES = {
     AM: "AM",
     PM: "PM"
@@ -165,15 +178,15 @@ export const APPS_LIST = [
         desktop_shortcut: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
         screen: displayTrash,
     },
-    {
-        id: "gedit",
-        title: "Contact Me",
-        icon: UBUNTU_ICONS_VALUES.APPS.TEXT_EDITOR.SRC,
-        disabled: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
-        favourite: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
-        desktop_shortcut: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
-        screen: displayGedit,
-    },
+    // {
+    //     id: "gedit",
+    //     title: "Contact Me",
+    //     icon: UBUNTU_ICONS_VALUES.APPS.TEXT_EDITOR.SRC,
+    //     disabled: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+    //     favourite: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+    //     desktop_shortcut: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
+    //     screen: displayGedit,
+    // },
 ]
 
 export const REMOVABLE_MEDIA_OPTIONS_VALUES = [

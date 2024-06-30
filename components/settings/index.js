@@ -18,6 +18,7 @@ import Color from './colorSettings';
 import Network from './networkSettings';
 import Displays from './displaySettings';
 import Notification from './notificationSettings';
+import Appearance from './appearanceSettings';
 
 
 export class Settings extends Component {
@@ -40,6 +41,7 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.WIFI]: <Wifi />,
             [APPLICATION_UNIQUE_ID.SETTINGS.BACKGROUND]: <Background changeBackgroundImage={this.props.changeBackgroundImage} currBgImgName={this.props.currBgImgName} />,
             [APPLICATION_UNIQUE_ID.SETTINGS.BLUETOOTH]: <Bluetooth />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.APPEARANCE]: <Appearance />,
             [APPLICATION_UNIQUE_ID.SETTINGS.SHARING]: <Sharing />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRINTERS]: <Printers />,
             [APPLICATION_UNIQUE_ID.SETTINGS.REMOVABLE_MEDIA]: <RemovableMedia />,
@@ -70,6 +72,7 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.WIFI]: <Wifi />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.BACKGROUND]: <Background changeBackgroundImage={this.props.changeBackgroundImage} currBgImgName={this.props.currBgImgName} />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.BLUETOOTH]: <Bluetooth />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.APPEARANCE]: <Appearance />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.SHARING]: <Sharing />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.PRINTERS]: <Printers />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.REMOVABLE_MEDIA]: <RemovableMedia />,
