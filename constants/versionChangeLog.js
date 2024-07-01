@@ -89,6 +89,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLHZP242X",
                 title: "Add Keyboard Settings"
             },
+            {
+                id: "CLK6Y79T3",
+                title: "Add Mouse and Touchpad Settings"
+            },
         ]
     },
 ];

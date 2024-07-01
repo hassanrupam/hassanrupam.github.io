@@ -23,7 +23,7 @@ const Keyboard = (props) => {
         <>
             <UnlockHeader triggerActive={visible} />
             <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
-            <div className="md:w-3/4 w-2/3 m-auto">
+                <div className="md:w-3/4 w-2/3 m-auto">
                     <span className='w-4/4 flex items-center justify-between font-bold'>Input Sources</span>
                 </div>
                 <div className={`md:w-3/4 w-2/3 m-auto  pb-2 flex flex-col items-start justify-start pt-1 ${!visible ? 'opacity-30' : 'opacity-50'}`}>
@@ -34,7 +34,7 @@ const Keyboard = (props) => {
                         <img width="14px" height="14px" src={dragIcon.SRC} alt={`ubuntu system version ${dragIcon.ALT}`} />
                         <span> English (US)</span>
                     </span>
-                    
+
                     <span className="flex flex-end space-x-2">
                         <img width="16px" height="16px" src={viewMoreIcon.SRC} alt={`ubuntu system version ${viewMoreIcon.ALT}`} />
                     </span>
@@ -52,20 +52,20 @@ const Keyboard = (props) => {
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5">
                     <span className="flex flex-end space-x-4 pl-2">
                         <label class="custom-radio">Use the same source for all windows
-                            <input type="radio"  checked={APP_CONSTANTS.BOOLEAN.TRUE} name="radio"/>
+                            <input type="radio" checked={APP_CONSTANTS.BOOLEAN.TRUE} name="radio" />
                             <span class="checkmark"></span>
                         </label>
                     </span>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5">
                     <span className="flex flex-end space-x-4 pl-2">
-                         <label class="custom-radio">Switch input sources individually for each window
-                            <input type="radio"  checked={APP_CONSTANTS.BOOLEAN.FALSE} name="radio"/>
+                        <label class="custom-radio">Switch input sources individually for each window
+                            <input type="radio" checked={APP_CONSTANTS.BOOLEAN.FALSE} name="radio" />
                             <span class="checkmark"></span>
                         </label>
                     </span>
                 </div>
-                
+
                 <div className="md:w-3/4 w-2/3 m-auto pt-8">
                     <span className='w-4/4 flex items-center justify-between font-bold'>Special Character Entry</span>
                 </div>
