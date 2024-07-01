@@ -24,6 +24,7 @@ import Accessibility from './accessibilitySettings';
 import RegionAndLanguage from './regionAndLanguageSettings';
 import Keyboard from './keyboardSettings';
 import MouseAndTouchpad from './mouseAndTouchpadSettings';
+import Power from './powerSettings';
 
 
 export class Settings extends Component {
@@ -64,6 +65,7 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.REGION_AND_LANGUAGE]: <RegionAndLanguage />,
             [APPLICATION_UNIQUE_ID.SETTINGS.KEYBOARD_SHORTCUT]: <Keyboard />,
             [APPLICATION_UNIQUE_ID.SETTINGS.MOUSE_AND_TOUCH_PAD]: <MouseAndTouchpad />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -100,6 +102,7 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.REGION_AND_LANGUAGE]: <RegionAndLanguage />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.KEYBOARD_SHORTCUT]: <Keyboard />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.MOUSE_AND_TOUCH_PAD]: <MouseAndTouchpad />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);

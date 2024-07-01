@@ -93,6 +93,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLK6Y79T3",
                 title: "Add Mouse and Touchpad Settings"
             },
+            {
+                id: "CLU94N7A9",
+                title: "Add Power Settings"
+            },
         ]
     },
 ];

@@ -267,7 +267,7 @@ export class StatusCard extends Component {
 						<img width="16px" height="16px" src="./themes/Yaru/status/battery-good-symbolic.svg" alt="ubuntu battery" />
 					</div>
 					<div className="w-2/3 flex items-center justify-between text-gray-400">
-						<span>6:40 Remaining (68%)</span>
+						<span>9:40 Remaining (81%)</span>
 						<SmallArrow angle={APP_CONSTANTS.ANGLES.RIGHT} />
 					</div>
 				</div>
