@@ -74,6 +74,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "7Gp2xK9H5",
                 title: "Add Accessibility Settings"
             },   
+            {
+                id: "CLATW58LV",
+                title: "Add Region & Language Settings"
+            },   
         ]
     },
 ];
