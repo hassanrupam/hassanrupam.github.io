@@ -125,11 +125,11 @@ export const UBUNTU_SETTINGS_MENU_PROPS = [
     },
     {
         SERIAL: 16,
-        MENU_NAME: "Keyboard Shortcuts",
+        MENU_NAME: "Keyboard",
         ID: APPLICATION_UNIQUE_ID_KEY_CONSTANTS.SETTINGS.KEYBOARD_SHORTCUT,
         ICON: UBUNTU_ICONS_VALUES.STATUS.KEYBOARD,
         ALT: "keyboard shortcuts setting",
-        isActive: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+        isActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
     },
     {
         SERIAL: 17,

@@ -2,7 +2,7 @@
 /**
  * Software Version Information
  */
-export const APPLICATION_VERSION = "0.1.2"
+export const APPLICATION_VERSION = "0.1.3"
 
 
 /**
@@ -78,6 +78,17 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLATW58LV",
                 title: "Add Region & Language Settings"
             },   
+        ]
+    },
+    {
+        serial: 4,
+        version: "0.1.3",
+        date: "01-Jul-2024",
+        taskList: [
+            {
+                id: "CLHZP242X",
+                title: "Add Keyboard Settings"
+            },
         ]
     },
 ];
