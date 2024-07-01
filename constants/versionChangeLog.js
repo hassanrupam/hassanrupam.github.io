@@ -97,6 +97,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLU94N7A9",
                 title: "Add Power Settings"
             },
+            {
+                id: "CL2N3EMEC",
+                title: "Add Sound Settings"
+            },
         ]
     },
 ];

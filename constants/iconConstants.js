@@ -159,9 +159,17 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu airplane mode"
         },
         AUDIO: {
+            VOLUME_LOW: {
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-volume-low-zero-panel.svg",
+                ALT: "ubuntu audio low"
+            },
             VOLUME_MEDIUM: {
-                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-volume-medium-symbolic.svg",
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-volume-medium-panel.svg",
                 ALT: "ubuntu audio medium"
+            },
+            VOLUME_HIGH: {
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-volume-high-panel.svg",
+                ALT: "ubuntu audio high"
             }
         },
         BACKGROUND: {
@@ -265,6 +273,10 @@ export const UBUNTU_ICONS_VALUES = {
         MOUSE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "input-mouse-symbolic.svg",
             ALT: "ubuntu mouse touch pad"
+        },
+        MICROPHONE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-input-microphone.svg",
+            ALT: "ubuntu mouse microphone"
         },
         NETWORK: {
             LOCAL: {
