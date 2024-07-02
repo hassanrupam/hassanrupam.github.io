@@ -584,34 +584,33 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     background-color: green;
 }
 
-
 .balance-slider-container {
     width: 100%;
     margin: auto;
     color: #ccc;
-  }
-  
-  .balance-label {
+}
+
+.balance-label {
     text-align: center;
     font-size: 14px;
     margin-bottom: 10px;
-  }
-  
-  .balance-slider {
+}
+
+.balance-slider {
     width: 100%;
     height: 4px;
     background: #555;
     border-radius: 5px;
     position: relative;
-  }
-  
-  .balance-track {
+}
+
+.balance-track {
     background: #aaa;
     height: 4px;
     border-radius: 5px;
-  }
-  
-  .balance-thumb {
+}
+
+.balance-thumb {
     top: -5px;
     height: 15px;
     width: 15px;
@@ -622,20 +621,35 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .balance-labels {
+}
+
+.balance-labels {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     margin-top: 5px;
-  }
-  
-  .balance-left {
+}
+
+.balance-left {
     margin-left: 10px;
-  }
-  
-  .balance-right {
+}
+
+.balance-right {
     margin-right: 10px;
-  }
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233,84,32, 1);
+    mix-blend-mode: color; 
+    pointer-events: none;
+}
   

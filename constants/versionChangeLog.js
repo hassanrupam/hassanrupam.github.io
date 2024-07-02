@@ -112,6 +112,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CL7P66RXW",
                 title: "Add Online Account Settings"
             },
+            {
+                id: "CL5SVA6ER",
+                title: "Add Multitasking Settings"
+            },
         ]
     },
 ];

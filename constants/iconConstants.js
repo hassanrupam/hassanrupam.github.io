@@ -184,6 +184,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "list-drag-handle-symbolic.svg",
             ALT: "ubuntu pan end"
         },
+        EMBLEM_MULTITASKING: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "multitasking-symbolic.svg",
+            ALT: "ubuntu multitasking"
+        },
         VIEW_MORE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "view-more-symbolic.svg",
             ALT: "ubuntu pan end"
@@ -447,7 +451,23 @@ export const UBUNTU_ICONS_VALUES = {
         VIEW_APP_GRID: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "view-app-grid-symbolic.svg",
             ALT: "ubuntu view app grid"
-        }
+        },
+        HOT_CORNER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "hot_corner.png",
+            ALT: "ubuntu view multitasking hot corner"
+        },
+        SCREEN_EDGE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "screen-edge.png",
+            ALT: "ubuntu view multitasking screen edge"
+        },
+        WORKSPACE_ONLY_PRIMARY: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "workspace-only-primary-screen.png",
+            ALT: "ubuntu view multitasking workspace only primary"
+        },
+        WORKSPACE_ALL_DISPLAY: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "workspace-all-display-screen.png",
+            ALT: "ubuntu view multitasking workspace all display"
+        },
     },
     WINDOW: {
         CLOSE: {

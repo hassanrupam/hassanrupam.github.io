@@ -54,6 +54,7 @@ export const APPLICATION_UNIQUE_ID_KEY_CONSTANTS = {
         APPEARANCE: "2VV42X2T34",
         NOTIFICATION: "T(Z^L^32Z^(T_",
         SEARCH: "_42X3N",
+        MULTITASKING: "5sJUwSi2Fj+",
         APPLICATIONS: "2VVR^32Z^(T_",
         PRIVACY: "VX^b23e",
         ONLINE_ACCOUNTS: "(TR^T41233(aTZ_",

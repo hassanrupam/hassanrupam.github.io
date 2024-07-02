@@ -27,6 +27,7 @@ import MouseAndTouchpad from './mouseAndTouchpadSettings';
 import Power from './powerSettings';
 import Sound from './soundSettings';
 import OnlineAccount from './onlineAccountSettings';
+import MultiTasking from './multitaskingSettings';
 
 
 export class Settings extends Component {
@@ -70,6 +71,7 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
             [APPLICATION_UNIQUE_ID.SETTINGS.SOUND]: <Sound />,
             [APPLICATION_UNIQUE_ID.SETTINGS.ONLINE_ACCOUNTS]: <OnlineAccount />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.MULTITASKING]: <MultiTasking />,
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -109,6 +111,7 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.SOUND]: <Sound />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.ONLINE_ACCOUNTS]: <OnlineAccount />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.MULTITASKING]: <MultiTasking />,
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
