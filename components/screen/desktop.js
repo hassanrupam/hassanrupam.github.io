@@ -85,6 +85,11 @@ export class Desktop extends Component {
             secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU,APPLICATION_UNIQUE_ID.SETTINGS.BLUETOOTH);
             setTimeout(()=>{this.openApp("settings")},500);
         });
+        document.getElementById("open-power-settings").addEventListener(APPLICATION_EVENTS.CLICK, () => {
+            secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU,APPLICATION_UNIQUE_ID.SETTINGS.POWER);
+            setTimeout(()=>{this.openApp("settings")},500);
+        });
+        
     }
 
     setContextListeners = () => {

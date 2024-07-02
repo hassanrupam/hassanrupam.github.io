@@ -120,6 +120,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLRXBYEGM",
                 title: "Add Bluetooth setting default open and remember last opened settings section"
             },
+            {
+                id: "CLQVM7F4G",
+                title: "Add Ppwer setting default open from status bar"
+            },
         ]
     },
 ];

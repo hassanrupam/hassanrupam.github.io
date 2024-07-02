@@ -31,6 +31,7 @@ export class StatusCard extends Component {
 			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
+			battery_power: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: 75, // better of setting default values from localStorage
 			brightness_level: 100 // setting default value to 100 so that by default its always full.
 		};
@@ -42,6 +43,7 @@ export class StatusCard extends Component {
 			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
+			battery_power: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SOUND_LEVEL) || 75,
 			brightness_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.BRIGHTNESS_LEVEL) || 100
 		})
@@ -52,6 +54,7 @@ export class StatusCard extends Component {
 			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
+			battery_power: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SOUND_LEVEL) || 75,
 			brightness_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.BRIGHTNESS_LEVEL) || 100
 		}, () => {
@@ -112,6 +115,11 @@ export class StatusCard extends Component {
 		if (prev === APP_CONSTANTS.BOOLEAN.FALSE) return;
 
 		this.setState({ bluetooth: APP_CONSTANTS.BOOLEAN.FALSE });
+	}
+
+	handlePowerClick = () => {
+		const prev = this.state.battery_power;
+		this.setState({ battery_power: !prev });
 	}
 
 	render() {
@@ -258,21 +266,35 @@ export class StatusCard extends Component {
 						<div className="w-8">
 						</div>
 						<div className="w-2/3 flex items-center justify-between">
-							<span>Bluetooth Setting</span>
+							<span>Bluetooth Settings</span>
 						</div>
 					</div>
 					:
 					<div id={"open-bluetooth-settings"} style={{display:"none"}}></div>
 				}
-				<div className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey hover:bg-ub-warm-grey hover:bg-opacity-20">
+
+				<div className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey hover:bg-ub-warm-grey hover:bg-opacity-20" onClick={this.handlePowerClick}>
 					<div className="w-8">
 						<img width="16px" height="16px" src="./themes/Yaru/status/battery-good-symbolic.svg" alt="ubuntu battery" />
 					</div>
-					<div className="w-2/3 flex items-center justify-between text-gray-400">
+					<div className="w-2/3 flex items-center justify-between">
 						<span>9:40 Remaining (81%)</span>
-						<SmallArrow angle={APP_CONSTANTS.ANGLES.RIGHT} />
+						<SmallArrow angle={this.state.battery_power ? APP_CONSTANTS.ANGLES.DOWN : APP_CONSTANTS.ANGLES.RIGHT} />
 					</div>
 				</div>
+				{this.state.battery_power ? 
+				
+					<div id={"open-power-settings"} className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey-light hover:bg-ub-warm-grey hover:bg-opacity-20">
+						<div className="w-8">
+						</div>
+						<div className="w-2/3 flex items-center justify-between">
+							<span>Power Settings</span>
+						</div>
+					</div>
+					:
+					<div id={"open-power-settings"} style={{ display: "none" }}></div>
+				}
+				
 				<div className="w-64 flex content-center justify-center">
 					<div className="w-2/4 border-black border-opacity-50 border-b my-2 border-solid" />
 				</div>
