@@ -28,7 +28,7 @@ export class StatusCard extends Component {
 		this.wrapperRef = React.createRef();
 		this.state = {
 			wifi: APP_CONSTANTS.BOOLEAN.TRUE,
-			bluetooth: APP_CONSTANTS.BOOLEAN.FALSE,
+			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: 75, // better of setting default values from localStorage
@@ -39,7 +39,7 @@ export class StatusCard extends Component {
 		this.props.toggleVisible();
 		this.setState({
 			wifi: APP_CONSTANTS.BOOLEAN.TRUE,
-			bluetooth: APP_CONSTANTS.BOOLEAN.FALSE,
+			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SOUND_LEVEL) || 75,
@@ -49,7 +49,7 @@ export class StatusCard extends Component {
 	componentDidMount() {
 		this.setState({
 			wifi: APP_CONSTANTS.BOOLEAN.TRUE,
-			bluetooth: APP_CONSTANTS.BOOLEAN.FALSE,
+			bluetooth: APP_CONSTANTS.BOOLEAN.TRUE,
 			wifi_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			bluetooth_sub: APP_CONSTANTS.BOOLEAN.FALSE,
 			sound_level: secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SOUND_LEVEL) || 75,
@@ -207,7 +207,7 @@ export class StatusCard extends Component {
 						<div className="w-8">
 						</div>
 						<div className="w-2/3 flex items-center justify-between">
-							<span>Wifi Setting</span>
+							<span>Wi-Fi Settings</span>
 						</div>
 					</div>
 					:
@@ -219,7 +219,7 @@ export class StatusCard extends Component {
 							<img width="16px" height="16px" src="./themes/Yaru/status/bluetooth-symbolic.svg" alt="ubuntu bluetooth" />
 						</div>
 						<div className="w-2/3 flex items-center justify-between">
-							<span>On</span>
+							<span>Zamcol ZK706 Pro</span>
 							<SmallArrow angle={this.state.bluetooth_sub ? APP_CONSTANTS.ANGLES.DOWN : APP_CONSTANTS.ANGLES.RIGHT} />
 						</div>
 					</div>
@@ -253,14 +253,16 @@ export class StatusCard extends Component {
 						</div>
 					)
 				}
-				{this.state.bluetooth_sub &&
-					<div className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey-light hover:bg-ub-warm-grey hover:bg-opacity-20">
+				{this.state.bluetooth_sub ?
+					<div id={"open-bluetooth-settings"} className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey-light hover:bg-ub-warm-grey hover:bg-opacity-20">
 						<div className="w-8">
 						</div>
-						<div className="w-2/3 flex items-center justify-between text-gray-400">
+						<div className="w-2/3 flex items-center justify-between">
 							<span>Bluetooth Setting</span>
 						</div>
 					</div>
+					:
+					<div id={"open-bluetooth-settings"} style={{display:"none"}}></div>
 				}
 				<div className="w-64 py-1.5 flex items-center justify-center bg-ub-cool-grey hover:bg-ub-warm-grey hover:bg-opacity-20">
 					<div className="w-8">

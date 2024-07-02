@@ -116,6 +116,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CL5SVA6ER",
                 title: "Add Multitasking Settings"
             },
+            {
+                id: "CLRXBYEGM",
+                title: "Add Bluetooth setting default open and remember last opened settings section"
+            },
         ]
     },
 ];

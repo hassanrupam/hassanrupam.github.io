@@ -76,10 +76,23 @@ export class Settings extends Component {
         setTimeout(() => {
             this.setState({ hideScroll: true})
         }, APP_CONSTANTS.TIME_OUTS.SECONDS_2);
+        const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
+        if (pageToOpen) {
+            this.setState({
+                screen: this.screens[pageToOpen],
+                active_screen: pageToOpen
+            });
+        } else {
+            let lastVisitedScreen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_SECTION);
+            if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
+                lastVisitedScreen = APPLICATION_UNIQUE_ID.SETTINGS.WIFI;
+            }
 
-        let lastVisitedScreen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_SECTION);
-        if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
-            lastVisitedScreen = APPLICATION_UNIQUE_ID.SETTINGS.WIFI;
+            // focus last visited screen
+            this.setState({
+                screen: this.screens[lastVisitedScreen],
+                active_screen: lastVisitedScreen
+            });
         }
     }
 
@@ -116,10 +129,11 @@ export class Settings extends Component {
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);
             if (pageToOpen) {
-                if (pageToOpen === SETTING_PAGES.WIFI.localValue) {
-                    this.changeScreen(document.getElementById(SETTING_PAGES.WIFI.url));
-                }
-
+                this.setState({
+                    screen: this.screens[pageToOpen],
+                    active_screen: pageToOpen
+                });
+                secureLocalStorage.removeItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU)
             } else {
                 let lastVisitedScreen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_SECTION);
                 if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
@@ -127,15 +141,18 @@ export class Settings extends Component {
                 }
 
                 // focus last visited screen
-                this.changeScreen(document.getElementById(lastVisitedScreen));
+                this.setState({
+                    screen: this.screens[lastVisitedScreen],
+                    active_screen: lastVisitedScreen
+                });
             }
 
         }
     }
 
     changeScreen = (e) => {
-
         const screen = e.id || e.target.id;
+        secureLocalStorage.removeItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU)
         // store this state
         secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_SECTION, screen);
 

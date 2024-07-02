@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BackgroundImage from '../util components/background-image';
 import SideBar from './side_bar';
-import apps, { APPLICATION_EVENTS, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY } from '../../apps.config';
+import apps, { APPLICATION_EVENTS, APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY } from '../../apps.config';
 import Window from '../base/window';
 import UbuntuApp from '../base/ubuntu_app';
 import AllApplications from '../screen/all-applications'
@@ -78,8 +78,12 @@ export class Desktop extends Component {
         });
 
         document.getElementById("open-wifi-settings").addEventListener(APPLICATION_EVENTS.CLICK, () => {
-            secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU,SETTING_PAGES.WIFI.localValue);
-            this.openApp("settings");
+            secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU,APPLICATION_UNIQUE_ID.SETTINGS.WIFI);
+            setTimeout(()=>{this.openApp("settings")},500);
+        });
+        document.getElementById("open-bluetooth-settings").addEventListener(APPLICATION_EVENTS.CLICK, () => {
+            secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU,APPLICATION_UNIQUE_ID.SETTINGS.BLUETOOTH);
+            setTimeout(()=>{this.openApp("settings")},500);
         });
     }
 
@@ -374,13 +378,13 @@ export class Desktop extends Component {
             var r = document.querySelector("#" + objId);
             r.style.transform = `translate(${r.style.getPropertyValue("--window-transform-x")},${r.style.getPropertyValue("--window-transform-y")}) scale(1)`;
 
-            // tell childs that his app has been not minimised
+            // tell childs that his app has been not minimized
             let minimized_windows = this.state.minimized_windows;
             minimized_windows[objId] = APP_CONSTANTS.BOOLEAN.FALSE;
             this.setState({ minimized_windows: minimized_windows });
             return;
         }
-
+        
         //if app is already opened
         if (this.app_stack.includes(objId)) this.focus(objId);
         else {
