@@ -138,7 +138,7 @@ const Sound = (props) => {
                             <div className="w-full flex flex-row space-x-2 justify-between">
                                 <div className="w-2/3 px-2 py-1 flex flex-row bg-ub-cool-grey-lighter justify-between">
                                     <img width="18px" height="12px" src={headPhoneIcon.SRC} alt={`ubuntu system version ${headPhoneIcon.ALT}`} />
-                                    <span>Headset - OnePlus Bullets Wireless Z2</span>
+                                    <span>Headset - Zamkol ZK706 Pro</span>
                                     <span className='w-8 flex items-center justify-center rounded'>
                                         <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
                                     </span>
