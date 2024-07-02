@@ -580,6 +580,10 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     background-color: red;
 }
 
+.dot.active-output{
+    background-color: green;
+}
+
 
 .balance-slider-container {
     width: 100%;

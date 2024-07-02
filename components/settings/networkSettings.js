@@ -22,7 +22,7 @@ const Network = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"text-sm w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick = {()=> {handleClick()}}>
+            <div className={"text-sm w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick = {()=> {handleClick()}}>
                 <div className="md:w-3/4 w-2/3 m-auto flex items-center justify-between py-1.5 mt-8">
                     <span className='w-2/3 flex items-center justify-start font-bold'>Wired</span>
                     <span className='w-8 flex items-center justify-end p-2 m-2 transition ease-in-out delay-300 border border-black border-0 hover:border-x hover:border-y hover:bg-ub-cool-grey-lighter rounded'>

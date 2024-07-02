@@ -18,7 +18,7 @@ const Color = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={() => { handleClick() }}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick={() => { handleClick() }}>
                 <div className={`w-full flex flex-col items-center justify-between pt-4 opacity-80`}>
                     <span>Each Device needs an up to date color profile to be color managed.</span>
                 </div>

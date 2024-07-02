@@ -18,7 +18,7 @@ const Printers = (props) => {
     return (
         <>
            <UnlockHeader triggerActive = {visible}/>
-            <div className={"w-full  flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={handleClick}>
+            <div className={"w-full  flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick={handleClick}>
                 <div className="m-auto opacity-40 h-full flex flex-grow flex-col justify-center items-center">
                     <img className="w-32 " src="./themes/Yaru/status/printer-symbolic.svg" alt="Ubuntu Airplane Mode" />
                     <span className="font-bold mt-4 text-lg px-1">No Printers</span>

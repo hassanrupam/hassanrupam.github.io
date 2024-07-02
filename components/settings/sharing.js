@@ -17,7 +17,7 @@ const Sharing = (props) => {
     return (
         <>
             <UnlockHeader triggerActive = {visible}/>
-            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={handleClick}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick={handleClick}>
                 <div className=" md:w-3/4 w-2/3 m-auto mt-10">
                     <span className='w-4/4 flex items-center justify-between font-bold '>Computer Name</span>
                 </div>

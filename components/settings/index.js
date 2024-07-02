@@ -26,6 +26,7 @@ import Keyboard from './keyboardSettings';
 import MouseAndTouchpad from './mouseAndTouchpadSettings';
 import Power from './powerSettings';
 import Sound from './soundSettings';
+import OnlineAccount from './onlineAccountSettings';
 
 
 export class Settings extends Component {
@@ -68,6 +69,7 @@ export class Settings extends Component {
             [APPLICATION_UNIQUE_ID.SETTINGS.MOUSE_AND_TOUCH_PAD]: <MouseAndTouchpad />,
             [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
             [APPLICATION_UNIQUE_ID.SETTINGS.SOUND]: <Sound />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.ONLINE_ACCOUNTS]: <OnlineAccount />,
         }
         setTimeout(() => {
             this.setState({ hideScroll: true})
@@ -106,6 +108,7 @@ export class Settings extends Component {
                 [APPLICATION_UNIQUE_ID.SETTINGS.MOUSE_AND_TOUCH_PAD]: <MouseAndTouchpad />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.POWER]: <Power />,
                 [APPLICATION_UNIQUE_ID.SETTINGS.SOUND]: <Sound />,
+                [APPLICATION_UNIQUE_ID.SETTINGS.ONLINE_ACCOUNTS]: <OnlineAccount />,
             }
 
             const pageToOpen = secureLocalStorage.getItem(SECURE_STORAGE_STORE_KEY.SETTING_AUTO_OPEN_MENU);

@@ -21,7 +21,7 @@ const AboutPc = (props) => {
     return (
         <>
            <UnlockHeader triggerActive = {visible}/>
-            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={()=>{handleClick()}}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick={()=>{handleClick()}}>
                 <div className="w-4/4 flex flex-grow flex-col items-center justify-between p-2">
                     <img width="200px" height="200px" className="md:w-1/4 w-1/2" src={orangeHexIcon.SRC} alt={`Ubuntu Logo ${orangeHexIcon.ALT}`} />
                 </div>

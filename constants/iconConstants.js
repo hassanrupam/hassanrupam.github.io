@@ -54,9 +54,25 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "disk-usage-app.png",
             ALT: "ubuntu app disk usage"
         },
+        EMAIL: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "applications-email-panel.svg",
+            ALT: "ubuntu app email imap smtp"
+        },
+        FLICKR: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "account-flickr.svg",
+            ALT: "ubuntu app flickr"
+        },
         FONT_MANAGER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-desktop-font.png",
             ALT: "ubuntu app font manager"
+        },
+        FOUR_SQUARE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "account-foursquare.svg",
+            ALT: "ubuntu app foursquare"
+        }, 
+        GOOGLE_ACCOUNT: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "google-account.svg",
+            ALT: "ubuntu app google account"
         },
         IMAGE_VIEWER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "image-viewer-app.png",
@@ -70,6 +86,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "rhythmbox.png",
             ALT: "ubuntu app audio player rhythmbox"
         },
+        KERBEROS:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "kerberos.png",
+            ALT: "ubuntu app kerberos"
+        },
         LIBRE_OFFICE:{
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "libre_office_calc.png",
             ALT: "ubuntu app libre office calc"
@@ -81,6 +101,18 @@ export const UBUNTU_ICONS_VALUES = {
         NETWORK_WIFI: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "network.png",
             ALT: "ubuntu app network cellular wifi"
+        },
+        NEXT_CLOUD: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "next-cloud.svg",
+            ALT: "ubuntu app network next cloud"
+        },
+        MICROSOFT: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "account-msn.svg",
+            ALT: "ubuntu app microsoft"
+        },
+        MS_EXCHANGE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "ms-exchange.svg",
+            ALT: "ubuntu app microsoft ms-exchange"
         },
         PRINTER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "printer.png",
@@ -125,6 +157,14 @@ export const UBUNTU_ICONS_VALUES = {
         VSCODE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "vscode.png",
             ALT: "ubuntu app code"
+        },
+        UBUNTU: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "ubuntu-icon.png",
+            ALT: "ubuntu app ubuntu"
+        },
+        UBUNTU_SINGLE_SIGN_ON : {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "ubuntu-single-sign-on.svg",
+            ALT: "ubuntu app ubuntu signle sign on"   
         }
     },
     EMBLEMS: {

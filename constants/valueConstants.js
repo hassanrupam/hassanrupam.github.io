@@ -359,45 +359,102 @@ export const NOTIFICATION_APPLICATION_LIST_VALUES = [
 
 export const SEARCH_SETTING_ITEM_LIST_VALUES = [
     {
-     SERIAL: 1,
-     appName: "Files",
-     appIcon: UBUNTU_ICONS_VALUES.SYSTEM.FOLDER,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 1,
+        appName: "Files",
+        appIcon: UBUNTU_ICONS_VALUES.SYSTEM.FOLDER,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 2,
-     appName: "Calculator",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.CALCULATOR,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 2,
+        appName: "Calculator",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.CALCULATOR,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 3,
-     appName: "Calendar",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.CALENDAR,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 3,
+        appName: "Calendar",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.CALENDAR,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 4,
-     appName: "Characters",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.CHARACTERS,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 4,
+        appName: "Characters",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.CHARACTERS,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 5,
-     appName: "Font Manager",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.FONT_MANAGER,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 5,
+        appName: "Font Manager",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.FONT_MANAGER,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 6,
-     appName: "Password and Keys",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.PASSWORDS,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 6,
+        appName: "Password and Keys",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.PASSWORDS,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
     {
-     SERIAL: 7,
-     appName: "Terminal",
-     appIcon: UBUNTU_ICONS_VALUES.APPS.TERMINAL,
-     appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+        SERIAL: 7,
+        appName: "Terminal",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.TERMINAL,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
     },
- ]
+]
+
+export const ONLINE_ACCOUNT_LIST_VALUES = [
+    {
+        SERIAL: 1,
+        appName: "Ubuntu Single Sign-On",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.UBUNTU_SINGLE_SIGN_ON,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 2,
+        appName: "Google",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.GOOGLE_ACCOUNT,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 3,
+        appName: "Nextcloud",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.NEXT_CLOUD,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 4,
+        appName: "Microsoft",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.MICROSOFT,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 5,
+        appName: "Flickr",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.FLICKR,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 6,
+        appName: "Foursquare",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.FOUR_SQUARE,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 7,
+        appName: "Microsoft Exchange",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.MS_EXCHANGE,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 8,
+        appName: "IMAP and SMTP",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.EMAIL,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+    {
+        SERIAL: 9,
+        appName: "Enterprise Login (Kerberos)",
+        appIcon: UBUNTU_ICONS_VALUES.APPS.KERBEROS,
+        appOption: APP_CONSTANTS_VALUES.BOOLEAN.TRUE
+    },
+]

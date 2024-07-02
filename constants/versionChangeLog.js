@@ -2,7 +2,7 @@
 /**
  * Software Version Information
  */
-export const APPLICATION_VERSION = "0.1.3"
+export const APPLICATION_VERSION = "0.1.4"
 
 
 /**
@@ -100,6 +100,17 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             {
                 id: "CL2N3EMEC",
                 title: "Add Sound Settings"
+            },
+        ]
+    },
+    {
+        serial: 5,
+        version: "0.1.4",
+        date: "02-Jul-2024",
+        taskList: [
+            {
+                id: "CL7P66RXW",
+                title: "Add Online Account Settings"
             },
         ]
     },

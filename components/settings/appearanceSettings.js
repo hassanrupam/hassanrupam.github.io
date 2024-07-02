@@ -39,7 +39,7 @@ const Appearance = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{paddingBottom:"3rem"}} onClick={handleClick}>
+            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{paddingBottom:"3rem"}} onClick={handleClick}>
                 <div className=" md:w-3/4 w-2/3 m-auto">
                     <span className='w-4/4 flex items-center justify-between font-bold '>Style</span>
                 </div>

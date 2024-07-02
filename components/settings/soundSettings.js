@@ -13,6 +13,7 @@ const Sound = (props) => {
     const microPhoneIcon = UBUNTU_ICONS.STATUS.MICROPHONE;
     const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
     const [volume, setVolume] = useState(50);
+    const [volumeOutput, setVolumeOutput] = useState(50);
 
     const handleClick = () => {
         setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
@@ -25,18 +26,23 @@ const Sound = (props) => {
     }, [visible])
 
     const repeatAction = () => {
-        for (let i = 0; i < 5; i++) {
-            setVolume(getRandomNumber(10, 30));
-        }
+        setVolume(getRandomNumber(getRandomNumber(10,20), getRandomNumber(30,60)));
+        setVolumeOutput(getRandomNumber(getRandomNumber(20,40), getRandomNumber(50,70)));
     }
-    const intervalId = setInterval(repeatAction, 600);
+    // const intervalId = setInterval(repeatAction, 1000);
+    
+    useEffect(() => {
+        const intervalId = setInterval(repeatAction, 100);
+        // Cleanup interval on component unmount
+        return () => clearInterval(intervalId);
+    }, []); // Empty dependency array ensures this runs only once
 
     const getRandomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const VolumeRocker = ({ volume }) => {
-        const totalDots = 28; // Number of total dots in the indicator
+    const VolumeRocker = ({ volume, isOutput }) => {
+        const totalDots = 26; // Number of total dots in the indicator
         const activeDots = Math.round((volume / 100) * totalDots); // Number of active (filled) dots
 
         return (
@@ -45,7 +51,7 @@ const Sound = (props) => {
                     {Array.from({ length: totalDots }, (_, index) => (
                         <div
                             key={index}
-                            className={`dot ${index < activeDots ? 'active' : ''}`}
+                            className={`dot ${index < activeDots ? (isOutput ? 'active-output' : 'active') : ''}`}
                         />
                     ))}
                 </div>
@@ -76,7 +82,7 @@ const Sound = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
+            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
                 <div className="md:w-3/4 w-2/3 m-auto">
                     <span className='w-4/4 flex items-center justify-between font-bold'>System Volume</span>
                 </div>
@@ -141,7 +147,7 @@ const Sound = (props) => {
                                     <span>Test</span>
                                 </div>
                             </div>
-                            <VolumeRocker volume={0} />
+                            <VolumeRocker volume={volumeOutput} isOutput={APP_CONSTANTS.BOOLEAN.TRUE}/>
                         </div>
                     </div>
                 </div>
@@ -181,7 +187,7 @@ const Sound = (props) => {
                                     </span>
                                 </div>
                             </div>
-                            <VolumeRocker volume={volume} />
+                            <VolumeRocker volume={volume} isOutput={APP_CONSTANTS.BOOLEAN.FALSE}/>
                         </div>
                     </div>
                 </div>

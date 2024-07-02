@@ -21,7 +21,7 @@ const Notification = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{paddingBottom:"3rem"}} onClick={() => { handleClick() }}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{paddingBottom:"3rem"}} onClick={() => { handleClick() }}>
                 <div className=" md:w-3/4 w-2/3 m-auto bg-ub-cool-grey p-4">
                     <span className='w-4/4 flex items-center justify-between font-bold '>Do Not Disturb
                         <ToggleSwitch
@@ -63,7 +63,7 @@ const Notification = (props) => {
                         .sort((a, b) => a.SERIAL > b.SERIAL ? 1 : -1)
                         .map((appItem) => {
                             return (
-                                <div className="md:w-3/4 w-2/3 m-auto p-2 flex items-center justify-between bg-ub-cool-grey md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100  justify-start pl-2 md:pl-2.5">
+                                <div className="md:w-3/4 w-2/3 m-auto p-2 flex items-center justify-between bg-ub-cool-grey hover:bg-ub-cool-grey-light md:rounded-none rounded-sm cursor-default outline-none focus:outline-none duration-100  justify-start pl-2 md:pl-2.5">
                                     <span className="flex flex-end">
                                         <span className="flex items-center px-2">
                                             <img width="24px" height="24px" src={appItem.appIcon.SRC} alt={`ubuntu notification ${appItem.appIcon.ALT}`} />

@@ -25,7 +25,7 @@ const Search = (props) => {
     return(
         <>
         <UnlockHeader triggerActive={visible} />
-            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
+            <div className={"w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{ paddingBottom: "3rem" }} onClick={handleClick}>
                 <div className={`md:w-3/4 w-2/3 m-auto  pb-4 flex flex-col items-center justify-between pt-8 ${visible ? 'opacity-30' : 'opacity-50'}`}>
                     <span>Control which search results are shown in the Activities Overview. The order of search results can also be changed by moving rows in the list.</span>
                 </div>

@@ -22,7 +22,7 @@ const DateTime = (props) => {
     return (
         <>
             <UnlockHeader triggerActive = {visible}/>
-            <div className={"text-sm w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light"} onClick={handleClick}>
+            <div className={"text-sm w-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} onClick={handleClick}>
                 <div className=" md:w-3/4 w-2/3 m-auto mt-4 bg-ub-cool-grey p-4">
                     <span className='w-4/4 flex items-center justify-between font-bold text-gray-400 opacity-50'>Automatic Date & Time
                         <ToggleSwitch
