@@ -74,6 +74,7 @@ export const UBUNTU_SETTINGS_MENU_PROPS = [
         ICON: UBUNTU_ICONS_VALUES.SYSTEM.VIEW_APP_GRID,
         ALT: "applications setting",
         isActive: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+        isRightSwipeActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
     },
     {
         SERIAL: 10,
@@ -82,6 +83,7 @@ export const UBUNTU_SETTINGS_MENU_PROPS = [
         ICON: UBUNTU_ICONS_VALUES.STATUS.LOCK_BLANK,
         ALT: "privacy setting",
         isActive: APP_CONSTANTS_VALUES.BOOLEAN.FALSE,
+        isRightSwipeActive: APP_CONSTANTS_VALUES.BOOLEAN.TRUE,
     },
     {
         SERIAL: 11,

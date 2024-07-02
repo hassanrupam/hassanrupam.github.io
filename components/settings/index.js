@@ -10,7 +10,7 @@ import AboutPc from './aboutPc';
 import DateTime from './dateTime';
 import DefaultApplications from './defaultApplications';
 import Users from './users';
-import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING_MENU } from '../../apps.config';
+import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING_MENU, UBUNTU_ICONS } from '../../apps.config';
 import secureLocalStorage from "react-secure-storage";
 import RemovableMedia from './removableMedia';
 import VersionInformation from './versionInfo';
@@ -36,6 +36,7 @@ export class Settings extends Component {
 
         super();
         this.screens = {};
+        this.panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
         this.state = {
             screen: () => { },
             active_screen: APPLICATION_UNIQUE_ID.SETTINGS.WIFI, // by d.efault 'background' screen is active
@@ -177,9 +178,17 @@ export class Settings extends Component {
                         .sort((a, b) => a.SERIAL > b.SERIAL ? 1 : -1)
                         .map((menuItem) => {
                             return (
-                                <div title={menuItem.isActive ? menuItem.MENU_NAME : "Coming Soon..."} id={menuItem.ID} tabIndex={menuItem.SERIAL} onFocus={this.changeScreen} className={(this.state.active_screen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                                    <img className={`w-3 md:w-4 ${!menuItem.isActive && 'opacity-30'}`} alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />
-                                    <span className={`ml-1 md:ml-2 text-gray-50 ${!menuItem.isActive && 'opacity-30' }`}>{menuItem.MENU_NAME}</span>
+
+                                <div title={menuItem.isActive ? menuItem.MENU_NAME : "Coming Soon..."} id={menuItem.ID} tabIndex={menuItem.SERIAL} onFocus={this.changeScreen} className={(this.state.active_screen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-between items-center pl-2 pr-2 md:pl-2.5"}>
+                                    <div className='flex justify-start'>
+                                        <img className={`w-3 md:w-4 ${!menuItem.isActive && 'opacity-30'}`} alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />
+                                        <span className={`ml-1 md:ml-2 text-gray-50 ${!menuItem.isActive && 'opacity-30'}`}>{menuItem.MENU_NAME}</span>
+                                    </div>
+                                    {menuItem.isRightSwipeActive &&
+                                        <div className='flex justify-center'>
+                                            <img className={`w-6 h-6 md:w-6 ${!menuItem.isActive && 'opacity-50'}`} alt={`${menuItem.ALT} ${this.panEndIcon.ALT}`} src={this.panEndIcon.SRC} />
+                                        </div>
+                                    }
                                 </div>
                             )
                         })
