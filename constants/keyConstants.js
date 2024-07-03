@@ -104,6 +104,14 @@ export const APPLICATION_UNIQUE_ID_KEY_CONSTANTS = {
             VIDEOS: 'V1D304',
             VSCODE: 'V5C0D3',
             YOUTUBE: 'g0U7UB4'
+        },
+        PRIVACY_LIST: {
+            CONNECTIVITY: 'C^//3C71V1T/',
+            LOCATION_SERVICE: 'L0C4710/_532V1C3',
+            THUNDERBOLT: '7HUND32B0L7',
+            FILE_HISTORY_AND_TRASH: 'F1L3_H15702Y_4/D_7245H',
+            SCREEN: '5C233/',
+            DIAGNOSTICS: 'D14G/0571C5'
         }
     },
     CMD: "3*J",

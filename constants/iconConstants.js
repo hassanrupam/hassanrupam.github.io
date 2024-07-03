@@ -326,9 +326,17 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "starred-symbolic.svg",
             ALT: "ubuntu default application"
         },
+        MONITOR: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "computer-symbolic.svg",
+            ALT: "ubuntu desktop panel"
+        },
         DESKTOP_PANEL: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-ubuntu-panel-symbolic.svg",
             ALT: "ubuntu desktop panel"
+        },
+        DIAGNOSTICS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "help-app-symbolic.svg",
+            ALT: "ubuntu display brightness"
         },
         DISPLAY_BRIGHTNESS: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "display-brightness-symbolic.svg",
@@ -358,6 +366,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "folder-publicshare-symbolic.svg",
             ALT: "ubuntu sharing"
         },
+        FILES_OUTLINE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "inode-directory-symbolic.svg",
+            ALT: "ubuntu files"
+        },
         KEYBOARD: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-keyboard-symbolic.svg",
             ALT: "ubuntu keyboard"
@@ -369,6 +381,10 @@ export const UBUNTU_ICONS_VALUES = {
         HEADPHONES: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "audio-headphones-symbolic.svg",
             ALT: "ubuntu headphones"
+        },
+        LOCATION: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "mark-location-symbolic.svg",
+            ALT: "ubuntu location mark"
         },
         LOCK_BLANK: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "lock-small-symbolic.svg",
@@ -391,6 +407,10 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu mouse microphone"
         },
         NETWORK: {
+            CONNECTIVITY: {
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "network-workgroup-symbolic.svg",
+                ALT: "ubuntu network local"
+            },
             LOCAL: {
                 SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "preferences-desktop-locale-symbolic.svg",
                 ALT: "ubuntu network local"
@@ -455,6 +475,10 @@ export const UBUNTU_ICONS_VALUES = {
         SYSTEM_USERS: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "system-users-symbolic.svg",
             ALT: "ubuntu system users"
+        },
+        THUNDERBOLT: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "thunderbolt-symbolic.svg",
+            ALT: "ubuntu thunderbolt"
         },
         TRASH: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "user-trash-symbolic.svg",

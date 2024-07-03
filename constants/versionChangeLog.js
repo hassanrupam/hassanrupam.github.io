@@ -135,6 +135,11 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLYBXH7AY",
                 title: "Add Applications Settings"
             },
+            {
+                id: "CLBXZT53F",
+                title: "Add Privacy Settings"
+            },
+            
         ]
     },
 ];

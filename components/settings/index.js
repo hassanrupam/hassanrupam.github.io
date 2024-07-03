@@ -8,7 +8,7 @@ import AboutPc from './aboutPc';
 import DateTime from './dateTime';
 import DefaultApplications from './defaultApplications';
 import Users from './users';
-import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING_APPLICATION_MENU, SETTING_MENU, UBUNTU_ICONS } from '../../apps.config';
+import { APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, SETTING_APPLICATION_MENU, SETTING_MENU, UBUNTU_ICONS, SETTING_PrIVACY_MENU } from '../../apps.config';
 import secureLocalStorage from "react-secure-storage";
 import RemovableMedia from './removableMedia';
 import VersionInformation from './versionInfo';
@@ -30,6 +30,7 @@ import MultiTasking from './multitaskingSettings';
 import React, { useState, useEffect, useCallback } from 'react';
 import ApplicationNavLinks from './applications/applicationNavLinks';
 import CommonAppSettings from './applications/commonAppSettings';
+import PrivacyNavLinks from './privacy/privacyNavLinks';
 
 const Settings = (props) => {
     const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
@@ -41,11 +42,13 @@ const Settings = (props) => {
     const [hideScroll, setHideScroll] = useState(false);
 
     const [appList, setAppList] = useState(SETTING_APPLICATION_MENU);
+    const [privacyList, setPrivacyList] =  useState(SETTING_PrIVACY_MENU);
     const [searchText, setSearchText] = useState("");
 
   
   
     const [isApplicationWindow,setIsApplicationWindow] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
+    const [isPrivacyWindow,setIsPrivacyWindow] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
 
     useEffect(() => {
         secureLocalStorage.setItem(SECURE_STORAGE_STORE_KEY.USER_SELECTED, "G");
@@ -114,6 +117,13 @@ const Settings = (props) => {
             [APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.VIDEOS]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.VSCODE]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.YOUTUBE]: <CommonAppSettings />,
+
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.CONNECTIVITY]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.LOCATION_SERVICE]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.THUNDERBOLT]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.FILE_HISTORY_AND_TRASH]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.SCREEN]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.DIAGNOSTICS]: <CommonAppSettings />,
         };
 
         setScreens(initialScreens);
@@ -165,6 +175,9 @@ const Settings = (props) => {
         if(screen === APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS){
             setIsApplicationWindow(APP_CONSTANTS.BOOLEAN.TRUE);
         }
+        if(screen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY){
+            setIsPrivacyWindow(APP_CONSTANTS.BOOLEAN.TRUE)
+        }
     },[screens, appList])
 
     const showNavBar = () => {
@@ -212,8 +225,23 @@ const Settings = (props) => {
             activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.YOUTUBE
         ){
             setIsApplicationWindow(APP_CONSTANTS.BOOLEAN.TRUE);
-        }else{
+            setIsPrivacyWindow(APP_CONSTANTS.BOOLEAN.FALSE);
+            
+        }
+        else if(activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY || 
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.CONNECTIVITY ||
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.LOCATION_SERVICE ||
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.THUNDERBOLT ||
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.FILE_HISTORY_AND_TRASH ||
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.SCREEN ||
+            activeScreen === APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.DIAGNOSTICS
+        ){
             setIsApplicationWindow(APP_CONSTANTS.BOOLEAN.FALSE);
+            setIsPrivacyWindow(APP_CONSTANTS.BOOLEAN.TRUE);
+        }
+        else{
+            setIsApplicationWindow(APP_CONSTANTS.BOOLEAN.FALSE);
+            setIsPrivacyWindow(APP_CONSTANTS.BOOLEAN.FALSE);
         }
        
     },[activeScreen])
@@ -228,7 +256,15 @@ const Settings = (props) => {
                             setIsApplicationWindow={setIsApplicationWindow}
                             hardChangeScreen={hardChangeScreen} 
                             searchText={searchText} setSearchText={setSearchText}
-                            appList={appList} setAppList={setAppList}
+                            appList={appList}
+                            />
+                        :
+                        isPrivacyWindow ? 
+                        <PrivacyNavLinks changeScreen={changeScreen}
+                            activeScreen={activeScreen}
+                            setIsPrivacyWindow={setIsPrivacyWindow}
+                            hardChangeScreen={hardChangeScreen} 
+                            privacyList={privacyList}
                             />
                         :
                         SETTING_MENU
@@ -257,7 +293,7 @@ const Settings = (props) => {
                 }
             </>
         );
-    }, [activeScreen, changeScreen, isApplicationWindow, appList, searchText]);
+    }, [activeScreen, changeScreen, isApplicationWindow, isPrivacyWindow, appList, searchText, privacyList]);
 
     return (
         <div className="w-full h-full flex bg-ub-cool-grey text-white select-none relative">
