@@ -277,7 +277,7 @@ const Settings = (props) => {
                                     tabIndex={menuItem.SERIAL}
                                     onFocus={changeScreen}
                                     onClick={handleOnclickMenu}
-                                    className={`${(activeScreen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-between items-center pl-2 pr-2 md:pl-2.5"}`}
+                                    className={`${(activeScreen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : "bg-ub-cool-grey hover:bg-ub-cool-grey-light ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-between items-center pl-2 pr-2 md:pl-2.5"}`}
                                 >
                                     <div className='flex justify-start'>
                                         <img className={`w-3 md:w-4 ${!menuItem.isActive && 'opacity-30'}`} alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />
