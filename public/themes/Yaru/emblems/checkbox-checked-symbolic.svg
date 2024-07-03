@@ -101,7 +101,7 @@
      transform="translate(-401.00015,-339)">
     <path
        d="m 404.50015,340 a 2.506,2.506 0 0 0 -2.5,2.5 v 9 c 0,1.376 1.124,2.5 2.5,2.5 h 9 c 1.376,0 2.5,-1.124 2.5,-2.5 v -9 c 0,-1.376 -1.124,-2.5 -2.5,-2.5 z m 0,1 h 9 c 0.84,0 1.5,0.66 1.5,1.5 v 9 c 0,0.84 -0.66,1.5 -1.5,1.5 h -9 c -0.84,0 -1.5,-0.66 -1.5,-1.5 v -9 c 0,-0.84 0.66,-1.5 1.5,-1.5 z"
-       style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal;marker:none;fill:#808080;fill-opacity:1"
+       style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal;marker:none;fill:#ffffff;fill-opacity:1"
        color="#000000"
        font-weight="400"
        font-family="sans-serif"
@@ -109,7 +109,7 @@
        fill="#474747"
        id="path2" />
     <path
-       style="display:inline;fill:#808080;fill-rule:evenodd;stroke-width:0.5;stroke-linecap:square"
+       style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke-width:0.5;stroke-linecap:square"
        d="m 412.8298,343.34354 1.09982,1.09982 -6.20247,6.20247 -3.7309,-3.73242 1.09982,-1.09982 2.63108,2.63107 z"
        id="path1489" />
   </g>

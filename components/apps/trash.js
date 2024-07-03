@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import secureLocalStorage from "react-secure-storage";
-import { SECURE_STORAGE_STORE_KEY } from '../../apps.config';
+import { SECURE_STORAGE_STORE_KEY, UBUNTU_ICONS } from '../../apps.config';
 
 export class Trash extends Component {
     constructor() {
@@ -17,12 +17,11 @@ export class Trash extends Component {
             },
             {
                 name: "node_modules",
-                icon: "./themes/Yaru/system/folder.png"
+                icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC
             },
-
             {
                 name: "abandoned project",
-                icon: "./themes/Yaru/system/folder.png"
+                icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC
             },
             {
                 name: "18BCP127 assignment name.zip",
@@ -30,11 +29,11 @@ export class Trash extends Component {
             },
             {
                 name: "project final",
-                icon: "./themes/Yaru/system/folder.png"
+                icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC
             },
             {
                 name: "project ultra-final",
-                icon: "./themes/Yaru/system/folder.png"
+                icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC
             },
 
         ];

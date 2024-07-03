@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BackgroundImage from '../util components/background-image';
 import SideBar from './side_bar';
-import apps, { APPLICATION_EVENTS, APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY } from '../../apps.config';
+import apps, { APPLICATION_EVENTS, APPLICATION_UNIQUE_ID, APP_CONSTANTS, SECURE_STORAGE_STORE_KEY, UBUNTU_ICONS } from '../../apps.config';
 import Window from '../base/window';
 import UbuntuApp from '../base/ubuntu_app';
 import AllApplications from '../screen/all-applications'
@@ -61,7 +61,7 @@ export class Desktop extends Component {
                 apps.push({
                     id: `new-folder-${folder.id}`,
                     title: folder.name,
-                    icon: './themes/Yaru/system/folder.png',
+                    icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC,
                     disabled: APP_CONSTANTS.BOOLEAN.TRUE,
                     favourite: APP_CONSTANTS.BOOLEAN.FALSE,
                     desktop_shortcut: APP_CONSTANTS.BOOLEAN.TRUE,
@@ -472,7 +472,7 @@ export class Desktop extends Component {
         apps.push({
             id: `new-folder-${folder_id}`,
             title: folder_name,
-            icon: './themes/Yaru/system/folder.png',
+            icon: UBUNTU_ICONS.SYSTEM.FOLDER.SRC,
             disabled: APP_CONSTANTS.BOOLEAN.TRUE,
             favourite: APP_CONSTANTS.BOOLEAN.FALSE,
             desktop_shortcut: APP_CONSTANTS.BOOLEAN.TRUE,

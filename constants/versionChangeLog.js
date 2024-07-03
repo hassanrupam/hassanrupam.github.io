@@ -2,7 +2,7 @@
 /**
  * Software Version Information
  */
-export const APPLICATION_VERSION = "0.1.4"
+export const APPLICATION_VERSION = "0.1.5"
 
 
 /**
@@ -123,6 +123,17 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             {
                 id: "CLQVM7F4G",
                 title: "Add Ppwer setting default open from status bar"
+            },
+        ]
+    },
+    {
+        serial: 6,
+        version: "0.1.5",
+        date: "02-Jul-2024",
+        taskList: [
+            {
+                id: "CLYBXH7AY",
+                title: "Add Applications Settings"
             },
         ]
     },

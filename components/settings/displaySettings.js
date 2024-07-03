@@ -5,15 +5,15 @@ import ToggleSwitch from "../util components/ToggleSwitch";
 import UnlockHeader from "./unlockHead";
 
 const Displays = (props) => {
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
 
     const handleClick = () => {
-        setVisible(true);
+        setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
     }
 
     useEffect(() => {
         if (visible) {
-            setVisible(false)
+            setVisible(APP_CONSTANTS.BOOLEAN.FALSE)
         }
     }, [visible])
     return (

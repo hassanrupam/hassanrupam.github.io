@@ -100,10 +100,10 @@
      transform="translate(-401.00015,-339)">
     <path
        id="path2002"
-       style="display:inline;fill:#808080;fill-rule:evenodd;stroke-linejoin:round"
+       style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke-linejoin:round"
        d="m 408.9064,340.00008 a 7,7 0 0 0 -6.90625,7 7,7 0 0 0 7,7 7,7 0 0 0 7,-7 7,7 0 0 0 -7,-7 7,7 0 0 0 -0.0937,0 z m 0.0937,1 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" />
     <circle
-       style="fill:#808080;fill-rule:evenodd;stroke-linejoin:round"
+       style="fill:#ffffff;fill-rule:evenodd;stroke-linejoin:round"
        id="path853"
        cx="409.00021"
        cy="347"

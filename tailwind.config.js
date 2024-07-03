@@ -7,6 +7,7 @@ module.exports = {
       ...theme('colors'),
       'ub-grey': '#111111',
       'ub-warm-grey': "#AEA79F",
+      'ub-cool-grey-dark': "#222222",
       'ub-cool-grey': "#333333",
       'ub-cool-grey-light': "#3d3d3d",
       'ub-cool-grey-lighter': "#555555",

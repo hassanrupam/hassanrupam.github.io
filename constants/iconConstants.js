@@ -38,21 +38,41 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "accessories-character-map.png",
             ALT: "ubuntu app characters"
         },
+        CHEESE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "cheese.png",
+            ALT: "ubuntu app cheese"
+        },
         CHROME: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "chrome.png",
             ALT: "ubuntu app chrome"
+        },
+        CISCO_SECURE: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "cisco-secure-client.png",
+            ALT: "ubuntu app cisco secure client"
         },
         DATE_TIME:{
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-system-time.png",
             ALT: "ubuntu app date time"
         },
         DBEAVER:{
-            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "DBeaver-Logo.png",
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "dbeaver.png",
             ALT: "ubuntu app dbeaver-ce"
         },
         DISC_USAGE_APP: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "disk-usage-app.png",
             ALT: "ubuntu app disk usage"
+        },
+        DISC_UTILITY_APP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "disk-utility-app.png",
+            ALT: "ubuntu app disk utility app"
+        },
+        DOCUMENT_VIEWER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "docuement-viewer.png",
+            ALT: "ubuntu app document viewer"
+        },
+        DOCUMENT_SCANNER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "scanner.png",
+            ALT: "ubuntu app document scanner"
         },
         EMAIL: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "applications-email-panel.svg",
@@ -61,6 +81,10 @@ export const UBUNTU_ICONS_VALUES = {
         FLICKR: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "account-flickr.svg",
             ALT: "ubuntu app flickr"
+        },
+        FISH: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "fish.png",
+            ALT: "ubuntu app fish"
         },
         FONT_MANAGER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-desktop-font.png",
@@ -73,6 +97,10 @@ export const UBUNTU_ICONS_VALUES = {
         GOOGLE_ACCOUNT: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "google-account.svg",
             ALT: "ubuntu app google account"
+        },
+        HELP_APP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "help-app.png",
+            ALT: "ubuntu app help"
         },
         IMAGE_VIEWER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "image-viewer-app.png",
@@ -90,9 +118,17 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "kerberos.png",
             ALT: "ubuntu app kerberos"
         },
+        LANGUAGE_SUPPORT:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-desktop-locale.png",
+            ALT: "ubuntu app language support"
+        },
         LIBRE_OFFICE:{
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "libre_office_calc.png",
             ALT: "ubuntu app libre office calc"
+        },
+        LOGS:{
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "log-viewer-app.png",
+            ALT: "ubuntu app logs"
         },
         NETWORK_LAN: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "preferences-system-network.png",
@@ -110,6 +146,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "account-msn.svg",
             ALT: "ubuntu app microsoft"
         },
+        MOCKOON: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "mockoon.png",
+            ALT: "ubuntu app mockoon"
+        },
         MS_EXCHANGE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "ms-exchange.svg",
             ALT: "ubuntu app microsoft ms-exchange"
@@ -126,17 +166,29 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "power.png",
             ALT: "ubuntu app power"
         },
+        POWER_STATISTICS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "power-statistics.png",
+            ALT: "ubuntu app power statistics"
+        },
         REPORT: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "dialog-warning.png",
-            ALT: "ubuntu app power"
+            ALT: "ubuntu app report"
         },
         SETTING: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "gnome-control-center.png",
             ALT: "ubuntu app settings"
         },
+        SOFTWARE_UPDATER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "software-updater.png",
+            ALT: "ubuntu app software updater"
+        },
         SPOTIFY: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "spotify.png",
             ALT: "ubuntu app spotify"
+        },
+        SYSTEM_MONITOR: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "system-monitor-app.png",
+            ALT: "ubuntu app system monitor"
         },
         TERMINAL: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "bash.png",
@@ -151,7 +203,7 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu app todo-list"
         },
         VIDEOS: {
-            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "emblem-videos.png",
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "mediaplayer-app.png",
             ALT: "ubuntu app videos"
         },
         VSCODE: {
@@ -165,12 +217,24 @@ export const UBUNTU_ICONS_VALUES = {
         UBUNTU_SINGLE_SIGN_ON : {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "ubuntu-single-sign-on.svg",
             ALT: "ubuntu app ubuntu signle sign on"   
-        }
+        },
+        UBUNTU_SOFTWARE : {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "software-store.png",
+            ALT: "ubuntu app ubuntu software"   
+        },
+        YOUTUBE : {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "icon-youtube.png",
+            ALT: "ubuntu app youtube"   
+        },
     },
     EMBLEMS: {
         EMBLEM_OK: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "emblem-ok-symbolic.svg",
             ALT: "ubuntu ok"
+        },
+        EMBLEM_PAN_START: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "pan-start-symbolic.svg",
+            ALT: "ubuntu pan start"
         },
         EMBLEM_PAN_END: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "pan-end-symbolic.svg",
@@ -187,6 +251,10 @@ export const UBUNTU_ICONS_VALUES = {
         EMBLEM_MULTITASKING: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "multitasking-symbolic.svg",
             ALT: "ubuntu multitasking"
+        },
+        OPEN_MENU: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "open-menu-symbolic.svg",
+            ALT: "ubuntu open menu"
         },
         VIEW_MORE: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.EMBLEMS + "view-more-symbolic.svg",
@@ -467,6 +535,22 @@ export const UBUNTU_ICONS_VALUES = {
         WORKSPACE_ALL_DISPLAY: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "workspace-all-display-screen.png",
             ALT: "ubuntu view multitasking workspace all display"
+        },
+        ADDITIONAL_DRIVERS: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "system-component-driver.png",
+            ALT: "ubuntu view additional drivers"
+        },
+        ADVANCE_NETWORK: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "preferences-system-network.png",
+            ALT: "ubuntu view advance network"
+        },
+        ARCHIVE_MANAGER: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "archive_manager.png",
+            ALT: "ubuntu view archive manager" 
+        },
+        BACKUPS_APP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "backups-app.png",
+            ALT: "ubuntu view backups" 
         },
     },
     WINDOW: {

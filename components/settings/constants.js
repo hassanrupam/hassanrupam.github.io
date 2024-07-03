@@ -1,4 +1,5 @@
 import { UBUNTU_ICONS } from "../../apps.config"
+import { UBUNTU_ICONS_VALUES } from "../../constants/iconConstants"
 
 export const SETTING_PAGES = {
     WIFI: {
@@ -143,7 +144,7 @@ export const DEFAULT_APP_LIST = [
     {
         appBase: "Photos",
         appName: "Image Viewer",
-        iconPath: "./themes/Yaru/apps/image-viewer-app.png",
+        iconPath: UBUNTU_ICONS_VALUES.APPS.IMAGE_VIEWER.SRC,
     }
 ]
 
