@@ -54,14 +54,14 @@
      color="#000"
      fill="#2e3436"
      id="g6"
-     style="fill:#808080;fill-opacity:1">
+     style="fill:#ffffff;fill-opacity:1">
     <path
        id="path2"
-       style="line-height:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1;fill:#808080;fill-opacity:1;marker:none"
+       style="line-height:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;marker:none"
        d="M 7.9355469 2 L 0.001953125 2.0097656 L 0 13.978516 L 9.96875 13.978516 L 9.9960938 4.0605469 C 9.9960938 2.9355469 9.0595469 2 7.9355469 2 z M 4.3535156 4.6464844 L 7.7070312 8 L 4.3535156 11.353516 L 3.6464844 10.646484 L 6.2929688 8 L 3.6464844 5.3535156 L 4.3535156 4.6464844 z " />
     <path
        d="M9.986 2.031s1.032.484 1.032 1.969v10h.984V4c0-1.25-2.016-1.969-2.016-1.969zM11.97 2.031s1.032.484 1.032 1.969v10h1V4c0-1.25-2.031-1.969-2.031-1.969z"
-       style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1;marker:none;fill:#808080;fill-opacity:1"
+       style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1;marker:none;fill:#ffffff;fill-opacity:1"
        overflow="visible"
        id="path4" />
   </g>
