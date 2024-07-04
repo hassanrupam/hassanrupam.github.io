@@ -129,7 +129,7 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
     {
         serial: 6,
         version: "0.1.5",
-        date: "02-Jul-2024",
+        date: "03-Jul-2024",
         taskList: [
             {
                 id: "CLYBXH7AY",
@@ -139,7 +139,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CLBXZT53F",
                 title: "Add Privacy Settings"
             },
-            
+            {
+                id: "CL5QG8F4D",
+                title: "Add Location Service Settings"
+            },
         ]
     },
 ];

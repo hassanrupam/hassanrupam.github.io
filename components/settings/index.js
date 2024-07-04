@@ -31,6 +31,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import ApplicationNavLinks from './applications/applicationNavLinks';
 import CommonAppSettings from './applications/commonAppSettings';
 import PrivacyNavLinks from './privacy/privacyNavLinks';
+import ConnectivityPrivacySetting from './privacy/connectivityPrivacySettings';
+import LocationServicePrivacySetting from './privacy/locationServicePrivacySettings';
 
 const Settings = (props) => {
     const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
@@ -118,8 +120,8 @@ const Settings = (props) => {
             [APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.VSCODE]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.APPLICATIONS_LIST.YOUTUBE]: <CommonAppSettings />,
 
-            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.CONNECTIVITY]: <CommonAppSettings />,
-            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.LOCATION_SERVICE]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.CONNECTIVITY]: <ConnectivityPrivacySetting />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.LOCATION_SERVICE]: <LocationServicePrivacySetting />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.THUNDERBOLT]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.FILE_HISTORY_AND_TRASH]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.SCREEN]: <CommonAppSettings />,
@@ -277,7 +279,7 @@ const Settings = (props) => {
                                     tabIndex={menuItem.SERIAL}
                                     onFocus={changeScreen}
                                     onClick={handleOnclickMenu}
-                                    className={`${(activeScreen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : "bg-ub-cool-grey hover:bg-ub-cool-grey-light ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-between items-center pl-2 pr-2 md:pl-2.5"}`}
+                                    className={`${(activeScreen === menuItem.ID ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : "bg-ub-cool-grey hover:bg-ub-cool-grey-light ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-3 focus:outline-none duration-100 my-0.5 flex justify-between items-center pl-2 pr-2 md:pl-2.5"}`}
                                 >
                                     <div className='flex justify-start'>
                                         <img className={`w-3 md:w-4 ${!menuItem.isActive && 'opacity-30'}`} alt={`${menuItem.ALT} ${menuItem.ICON.ALT}`} src={menuItem.ICON.SRC} />

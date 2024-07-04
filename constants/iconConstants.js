@@ -383,8 +383,14 @@ export const UBUNTU_ICONS_VALUES = {
             ALT: "ubuntu headphones"
         },
         LOCATION: {
-            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "mark-location-symbolic.svg",
-            ALT: "ubuntu location mark"
+            ACTIVE: {
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "mark-location-symbolic.svg",
+                ALT: "ubuntu location mark"
+            },
+            DISABLED: {
+                SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "location-services-disabled-symbolic.svg",
+                ALT: "ubuntu location mark"
+            }
         },
         LOCK_BLANK: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.STATUS + "lock-small-symbolic.svg",
