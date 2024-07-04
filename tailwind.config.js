@@ -8,11 +8,13 @@ module.exports = {
       'ub-grey': '#111111',
       'ub-warm-grey': "#AEA79F",
       'ub-cool-grey-dark': "#222222",
-      'ub-cool-grey': "#2a2a2a",
+      'ub-cool-grey': "#2c2c2c",
       'ub-cool-grey-light': "#393939",
       'ub-cool-grey-lighter': "#555555",
       'ub-cool-grey-lightest': "#666666",
       'ub-orange': "#E95420",
+      'ub-red': "#a21223",
+      'ub-red-darker': "#510911",
       'ub-lite-abrgn': "#77216F",
       'ub-med-abrgn': "#5E2750",
       'ub-drk-abrgn': "#2C001E",
@@ -62,6 +64,15 @@ module.exports = {
       outlineOffset: {
         '2': '2px',
         '4': '4px',
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" }
+        }
+      },
+      animation: {
+        wiggle: "pulse 200ms cubic-bezier(0.4, 0, 0.6, 1)"
       }
     },
   },

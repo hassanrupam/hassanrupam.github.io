@@ -146,7 +146,18 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
             {
                 id: "CLM4SRCZY",
                 title: "Add Thunderbolt Settings"
-            },   
+            },               
+        ]
+    },
+    {
+        serial: 7,
+        version: "0.1.6",
+        date: "04-Jul-2024",
+        taskList: [
+            {
+                id: "CLP8BLCQQ",
+                title: "Add File History and Trash Settings"
+            },         
         ]
     },
 ];
