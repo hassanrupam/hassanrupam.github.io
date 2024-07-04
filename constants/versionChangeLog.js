@@ -143,6 +143,10 @@ export const APPLICATION_VERSION_INFORMATION_LIST = [
                 id: "CL5QG8F4D",
                 title: "Add Location Service Settings"
             },
+            {
+                id: "CLM4SRCZY",
+                title: "Add Thunderbolt Settings"
+            },   
         ]
     },
 ];

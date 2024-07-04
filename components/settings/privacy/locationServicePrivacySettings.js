@@ -42,16 +42,16 @@ const LocationServicePrivacySetting = (props) => {
                 </div>
                 {locationService &&
                     <>
-                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-center justify-center pt-4 opacity-80 text-md mb-2`}>
+                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-center justify-center pt-4 opacity-80 text-sm mb-2 px-2`}>
                             <span>Location services allow applications to know your location. Using Wi-Fi and mobile broadband increases accuracy.</span>
                         </div>
-                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-start justify-between opacity-80 text-md mb-2`}>
+                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-start justify-between opacity-80 text-sm mb-2 px-2`}>
                             <span>Uses Mozilla Location Service: <a className="text-cyan-500 underline" href="https://www.google.com/privacy/lsf.html" target="_Blank">Privacy Policy</a></span>
                         </div>
-                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-start justify-between opacity-80 text-md mb-2`}>
+                        <div className={`md:w-3/4 w-2/3 m-auto flex flex-col items-start justify-between opacity-80 text-sm mb-2 px-2`}>
                             <span>Allow the applications below to determine your location.</span>
                         </div>
-                        <div className="md:w-3/4 w-2/3 m-auto  text-gray-400 bg-ub-cool-grey py-4  px-2 flex justify-center items-center mt-4">
+                        <div className="md:w-3/4 w-2/3 m-auto text-sm  text-gray-400 bg-ub-cool-grey py-4  px-2 flex justify-center items-center mt-4">
                             <button>No Applications Have Asked for Location Access</button>
                         </div>
                     </>

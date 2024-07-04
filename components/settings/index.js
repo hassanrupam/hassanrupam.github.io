@@ -33,6 +33,7 @@ import CommonAppSettings from './applications/commonAppSettings';
 import PrivacyNavLinks from './privacy/privacyNavLinks';
 import ConnectivityPrivacySetting from './privacy/connectivityPrivacySettings';
 import LocationServicePrivacySetting from './privacy/locationServicePrivacySettings';
+import ThunderboltPrivacySettings from './privacy/thunderboltPrivacySettings';
 
 const Settings = (props) => {
     const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
@@ -122,7 +123,7 @@ const Settings = (props) => {
 
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.CONNECTIVITY]: <ConnectivityPrivacySetting />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.LOCATION_SERVICE]: <LocationServicePrivacySetting />,
-            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.THUNDERBOLT]: <CommonAppSettings />,
+            [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.THUNDERBOLT]: <ThunderboltPrivacySettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.FILE_HISTORY_AND_TRASH]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.SCREEN]: <CommonAppSettings />,
             [APPLICATION_UNIQUE_ID.SETTINGS.PRIVACY_LIST.DIAGNOSTICS]: <CommonAppSettings />,
