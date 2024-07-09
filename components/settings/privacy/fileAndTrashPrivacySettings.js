@@ -3,12 +3,80 @@ import { APP_CONSTANTS } from "../../../apps.config";
 import ToggleSwitch from "../../util components/ToggleSwitch";
 import SmallArrow from "../../util components/small_arrow";
 import ImportantButton from "../../common/importantButton";
+import AppSelect from "../../common/AppSelect";
 
 const FilesAndTrashPrivacySettings = (props) => {
 
     const [fileHistory, setFileHistory] = useState(APP_CONSTANTS.BOOLEAN.TRUE);
     const [autoDeleteTrash, setAutoDeleteTrash] = useState(APP_CONSTANTS.BOOLEAN.TRUE);
     const [autoDeleteTemporary, setAutoDeleteTemporary] = useState(APP_CONSTANTS.BOOLEAN.TRUE);
+
+
+    const automaticDeletePeriodOptions = [
+        {
+            value: '1h',
+            label: '1 hour',
+        },
+        {
+            value: '1d',
+            label: '1 day',
+        },
+        {
+            value: '2d',
+            label: '2 days',
+        },
+        {
+            value: '3d',
+            label: '3 days',
+        },
+        {
+            value: '4d',
+            label: '4 days',
+        },
+        {
+            value: '5d',
+            label: '5 days',
+        },
+        {
+            value: '6d',
+            label: '6 days',
+        },
+        {
+            value: '7d',
+            label: '7 days',
+        },
+        {
+            value: '14d',
+            label: '14 days',
+        },
+        {
+            value: '30d',
+            label: '30 days',
+        },
+    ];
+
+    const fileHistoryDurationOptions = [
+        {
+            value: '1d',
+            label: '1 day',
+        },
+        {
+            value: '7d',
+            label: '7 days',
+        },
+        {
+            value: '30d',
+            label: '30 days',
+        },
+        {
+            value: 'forever',
+            label: 'Forever',
+        },
+    ];
+
+    const [fileHistoryDuration, setFileHistoryDuration] = useState('forever');
+    const [automaticDeletePeriod, setAutomaticDeletePeriod] = useState('30d');
+
 
     return (
         <>
@@ -43,16 +111,11 @@ const FilesAndTrashPrivacySettings = (props) => {
                     <div className="w-2/3 flex flex-col justify-start px-2">
                         <span>File History Duration</span>
                     </div>
-                    <span className='w-4/4 flex items-center justify-between font-bold text-gray-400'>
-                        <span className="w-24 bg-ub-cool-grey-light px-2 py-2 flex items-center justify-between mr-2 cursor-pointer"> Forever
-                            <SmallArrow className={""} angle="down" />
-                        </span>
+                    <span className='w-32 flex items-center justify-between font-bold text-gray-400'>
+                        <AppSelect value={fileHistoryDuration} options={fileHistoryDurationOptions} onChange={setFileHistoryDuration}/>
                     </span>
                 </div>
                 <div className="md:w-3/4 w-2/3 m-auto pb-2 flex flex-col items-end justify-end mt-3">
-                    {/* <button className={`duration-500  bg-ub-red w-32 p-2 rounded ${effect && 'bg-ub-red-darker animate-wiggle border border-1 border-white'}`} onClick={() => { setEffect(true); }}
-                        onAnimationEnd={() => setEffect(false)}> Clear History...
-                    </button> */}
                     <ImportantButton label="Clear History..." />
                 </div>
                 <div className="md:w-3/4 w-2/3 m-auto mt-8">
@@ -105,19 +168,11 @@ const FilesAndTrashPrivacySettings = (props) => {
                     <div className="w-2/3 flex flex-col justify-start px-2">
                         <span>Automatically Delete Period</span>
                     </div>
-                    <span className='w-4/4 flex items-center justify-between font-bold text-gray-400'>
-                        <span className="w-24 bg-ub-cool-grey-light px-2 py-2 flex items-center justify-between mr-2 cursor-pointer"> 1 Day
-                            <SmallArrow className={""} angle="down" />
-                        </span>
+                    <span className='w-32 flex items-center justify-between font-bold text-gray-400'>
+                        <AppSelect value={automaticDeletePeriod} options={automaticDeletePeriodOptions} onChange={setAutomaticDeletePeriod}/>
                     </span>
                 </div>
                 <div className="md:w-3/4 w-2/3 m-auto pb-2 flex flex-row items-end justify-end mt-3 space-x-4">
-                    {/* <button className={`duration-500  bg-ub-red w-32 p-2 rounded ${effect && 'bg-ub-red-darker animate-wiggle border border-1 border-white'}`} onClick={() => { setEffect(true); }}
-                        onAnimationEnd={() => setEffect(false)}> Empty Trash...
-                    </button>
-                    <button className={`duration-500  bg-ub-red w-60 p-2 rounded ${effect && 'bg-ub-red-darker animate-wiggle border border-1 border-white'}`} onClick={() => { setEffect(true); }}
-                        onAnimationEnd={() => setEffect(false)}> Delete Temporary Files...
-                    </button> */}
                     <ImportantButton label="Empty Trash..." />
                     <ImportantButton label="Delete Temporary Files..."  className={"w-60"}/>
                 </div>

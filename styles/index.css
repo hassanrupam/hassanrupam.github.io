@@ -652,4 +652,32 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     mix-blend-mode: color; 
     pointer-events: none;
 }
+.custom-dropdown .ant-select-item {
+    background-color: #222222;
+    color:white;
+}
+
+.custom-dropdown .ant-select-item-option-selected,
+.custom-dropdown .ant-select-item-option-active {
+    background-color: #222222 !important;
+    color: white !important;
+}
+
+.custom-option {
+    background-color: #222222;
+    color:white;
+}
+
+.custom-option:hover {
+    background-color: #555555 !important;
+}
+
+.app-dropdown > .ant-select-selector{
+    background-color: #555555 !important;
+    border:none !important;
+}
+
+.app-dropdown > .ant-select-arrow, .app-dropdown > .ant-select-selector{
+    color: white !important;
+}
   
