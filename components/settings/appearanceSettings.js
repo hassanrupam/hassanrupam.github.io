@@ -2,14 +2,88 @@ import { useEffect, useState } from "react";
 import UnlockHeader from "./unlockHead";
 import ToggleSwitch from "../util components/ToggleSwitch";
 import SmallArrow from "../util components/small_arrow";
-import { APP_CONSTANTS, UBUNTU_ICONS } from "../../apps.config";
+import { APP_CONSTANTS, APPLICATION_STYLE_MODE, UBUNTU_ICONS } from "../../apps.config";
 import Slider from "../common/slider";
+import AppSelect from "../common/AppSelect";
 
 const Appearance = (props) => {
 
     const panEndIcon = UBUNTU_ICONS.EMBLEMS.EMBLEM_PAN_END;
 
     const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
+    const [desktopIconSize,setDesktopIconSize] = useState("normal");
+    const [positionOfIcon,setPositionOfIcon] = useState("br");
+    const [showOnDisplay,setShowOnDisplay] = useState("a");
+    const [positionOnScreen,setPositionOnScreen] = useState("l");
+
+
+    const desktopIconSizeOptions = [
+        {
+            value: 'small',
+            label: 'Small'
+        },
+        {
+            value: 'normal',
+            label: 'Normal'
+        },
+        {
+            value: 'large',
+            label: 'Large'
+        },
+        {
+            value: 'tiny',
+            label: 'Tiny'
+        }
+    ];
+
+    const positionOfIconOptions = [
+        {
+            value: 'tl',
+            label: 'Top Left'
+        },
+        {
+            value: 'tr',
+            label: 'Top Right'
+        },
+        {
+            value: 'bl',
+            label: 'Bottom Left'
+        },
+        {
+            value: 'br',
+            label: 'Bottom Right'
+        }
+    ];
+
+    const showOnDisplayOptions = [
+        {
+            value: 'a',
+            label: 'All displays'
+        },
+        {
+            value: 'p',
+            label: 'Primary Display (1)'
+        },
+        {
+            value: 'bl',
+            label: '1. Built-in display'
+        }
+    ];
+
+    const positionOnScreenOptions = [
+        {
+            value: 'l',
+            label: 'Left'
+        },
+        {
+            value: 'b',
+            label: 'Bottom'
+        },
+        {
+            value: 'r',
+            label: 'Right'
+        }
+    ];
 
     const handleClick = () => {
         setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
@@ -39,7 +113,7 @@ const Appearance = (props) => {
     return (
         <>
             <UnlockHeader triggerActive={visible} />
-            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{paddingBottom:"3rem"}} onClick={handleClick}>
+            <div className={"w-full h-full flex-col flex-grow z-20 max-h-full overflow-y-auto windowMainScreen select-none bg-ub-cool-grey-light opacity-80"} style={{paddingBottom:"3rem"}} onClick={handleClick}> 
                 <div className=" md:w-3/4 w-2/3 m-auto">
                     <span className='w-4/4 flex items-center justify-between font-bold '>Style</span>
                 </div>
@@ -70,26 +144,26 @@ const Appearance = (props) => {
                     <div className="w-2/3 flex items-center justify-start px-2">
                         <span>Size</span>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-32 px-4 flex items-center justify-end">
-                            Normal
-                        </span>
-                        <span className='w-8 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-32 flex justify-end">
+                        <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={desktopIconSize}
+                            options={desktopIconSizeOptions}
+                            onChange={setDesktopIconSize} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >
                     <div className="w-2/3 flex items-center justify-start px-2">
                         <span>Position of New Icons</span>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-32 px-4 flex items-center justify-end">
-                            Bottom Right
-                        </span>
-                        <span className='w-8 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-32 flex justify-end">
+                        <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={positionOfIcon}
+                            options={positionOfIconOptions}
+                            onChange={setPositionOfIcon} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >
@@ -169,26 +243,26 @@ const Appearance = (props) => {
                     <div className="w-2/3 flex items-center justify-start px-2">
                         <span>Show On</span>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-30 px-4 flex items-center justify-end">
-                            Primary Display (1)
-                        </span>
-                        <span className='w-10 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-40 flex justify-end">
+                         <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={showOnDisplay}
+                            options={showOnDisplayOptions}
+                            onChange={setShowOnDisplay} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >
                     <div className="w-2/3 flex items-center justify-start px-2">
                         <span>Position On Screen</span>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-30 px-4 flex items-center justify-end">
-                            Left
-                        </span>
-                        <span className='w-10 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-24 flex justify-end">
+                        <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={positionOnScreen}
+                            options={positionOnScreenOptions}
+                            onChange={setPositionOnScreen} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-4 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >

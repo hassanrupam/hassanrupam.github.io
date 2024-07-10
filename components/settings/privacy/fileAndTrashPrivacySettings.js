@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { APP_CONSTANTS } from "../../../apps.config";
+import { APP_CONSTANTS, UBUNTU_ICONS } from "../../../apps.config";
 import ToggleSwitch from "../../util components/ToggleSwitch";
 import SmallArrow from "../../util components/small_arrow";
 import ImportantButton from "../../common/importantButton";

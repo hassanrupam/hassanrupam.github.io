@@ -1,13 +1,74 @@
 import { useEffect, useState } from "react";
-import { APP_CONSTANTS } from "../../apps.config";
+import { APP_CONSTANTS, APPLICATION_STYLE_MODE } from "../../apps.config";
 import UnlockHeader from "./unlockHead";
 import Slider from "../common/slider";
 import ToggleSwitch from "../util components/ToggleSwitch";
 import SmallArrow from "../util components/small_arrow";
+import AppSelect from "../common/AppSelect";
 
 const Power = (props) => {
 
     const [visible, setVisible] = useState(APP_CONSTANTS.BOOLEAN.FALSE);
+    const [screenBlank, setScreenBlank] = useState('5');
+    const [powerButtonBehavior, setPowerButtonBehavior] = useState('p');
+
+    const screenBlankOptions = [
+        {
+            value: '1',
+            label: '1 minute',
+        },
+        {
+            value: '2',
+            label: '2 minutes',
+        },
+        {
+            value: '3',
+            label: '3 minutes',
+        },
+        {
+            value: '4',
+            label: '4 minutes',
+        },
+        {
+            value: '5',
+            label: '5 minutes',
+        },
+        {
+            value: '8',
+            label: '8 minutes',
+        },
+        {
+            value: '10',
+            label: '10 minutes',
+        },
+        {
+            value: '12',
+            label: '12 minutes',
+        },
+        {
+            value: '15',
+            label: '15 minutes',
+        },
+        {
+            value: 'n',
+            label: 'Never',
+        },
+    ];
+
+    const powerButtonBehaviorOptions = [
+        {
+            value: 's',
+            label: 'Suspend',
+        },
+        {
+            value: 'p',
+            label: 'Power Off',
+        },
+        {
+            value: 'n',
+            label: 'Nothing',
+        },
+    ]
 
     const handleClick = () => {
         setVisible(APP_CONSTANTS.BOOLEAN.TRUE);
@@ -98,13 +159,13 @@ const Power = (props) => {
                         <span>Screen Blank</span>
                         <p className='w-3/3 flex items-center justify-between text-xs text-gray-400'>Turns the screen off after a period of inactivity.</p>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-32 px-4 flex items-center justify-end">
-                            5 minutes
-                        </span>
-                        <span className='w-8 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-32 flex justify-end">
+                        <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={screenBlank}
+                            options={screenBlankOptions}
+                            onChange={setScreenBlank} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-2 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >
@@ -146,13 +207,13 @@ const Power = (props) => {
                     <div className="w-2/3 flex flex-col justify-start px-2">
                         <span>Power Button Behavior</span>
                     </div>
-                    <div className="w-64 flex justify-end">
-                        <span className="w-32 px-4 flex items-center justify-end">
-                        Power Off
-                        </span>
-                        <span className='w-8 flex items-center justify-center rounded'>
-                            <SmallArrow angle={APP_CONSTANTS.ANGLES.DOWN} />
-                        </span>
+                    <div className="w-32 flex justify-end">
+                        <AppSelect
+                            disabled={APP_CONSTANTS.BOOLEAN.TRUE}
+                            mode={APPLICATION_STYLE_MODE.DARK}
+                            value={powerButtonBehavior}
+                            options={powerButtonBehaviorOptions}
+                            onChange={setPowerButtonBehavior} />
                     </div>
                 </div>
                 <div className="text-sm md:w-3/4 w-2/3 m-auto py-3 px-2 flex items-center opacity-80 justify-between bg-ub-cool-grey hover:bg-opacity-50 md:rounded-none rounded-sm cursor-pointer outline-none duration-100 flex justify-start pl-2 md:pl-2.5" >

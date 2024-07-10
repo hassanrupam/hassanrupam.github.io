@@ -178,6 +178,10 @@ export const UBUNTU_ICONS_VALUES = {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "gnome-control-center.png",
             ALT: "ubuntu app settings"
         },
+        SHOTWELL: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "shotwell.png",
+            ALT: "ubuntu app shotwell"
+        },
         SOFTWARE_UPDATER: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.APPS + "software-updater.png",
             ALT: "ubuntu app software updater"
@@ -581,6 +585,10 @@ export const UBUNTU_ICONS_VALUES = {
         BACKUPS_APP: {
             SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "backups-app.png",
             ALT: "ubuntu view backups" 
+        },
+        SYSTEM_APP: {
+            SRC: APPLICATION_BASE_PATH_VALUES.YARU_THEME.SYSTEM + "system-component-application-bw.png",
+            ALT: "ubuntu view system app" 
         },
     },
     WINDOW: {

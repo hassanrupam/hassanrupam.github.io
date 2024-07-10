@@ -652,32 +652,81 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
     mix-blend-mode: color; 
     pointer-events: none;
 }
-.custom-dropdown .ant-select-item {
+
+
+/*App Dropdown Style*/
+.custom-dropdown .ant-select-item,
+.custom-dropdown-dark .ant-select-item {
     background-color: #222222;
-    color:white;
+    color: white;
+    padding: 5px !important;
 }
 
 .custom-dropdown .ant-select-item-option-selected,
-.custom-dropdown .ant-select-item-option-active {
+.custom-dropdown .ant-select-item-option-active,
+.custom-dropdown-dark .ant-select-item-option-selected,
+.custom-dropdown-dark .ant-select-item-option-active {
     background-color: #222222 !important;
     color: white !important;
 }
 
-.custom-option {
+.custom-option,
+.custom-option-dark {
     background-color: #222222;
-    color:white;
+    color: white;
 }
 
-.custom-option:hover {
+.custom-option .ant-select-item-option-content,
+.custom-option-dark .ant-select-item-option-content{
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 5px !important;
+}
+
+.custom-option:hover,
+.custom-option-dark:hover {
     background-color: #555555 !important;
 }
 
-.app-dropdown > .ant-select-selector{
+.app-dropdown > .ant-select-selector {
     background-color: #555555 !important;
-    border:none !important;
+    border: none !important;
+    padding: 0px 2px !important;
+    height: 2rem !important;
 }
 
-.app-dropdown > .ant-select-arrow, .app-dropdown > .ant-select-selector{
+.app-dropdown-dark >.ant-select-selector {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px 2px !important;
+    height: 2rem !important;
+}
+.app-dropdown > .ant-select-selector > .ant-select-selection-item{
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding-right: 1.5rem !important;
+    padding-left: 5px !important;
+}
+.app-dropdown-dark > .ant-select-selector > .ant-select-selection-item{
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding-right: 1.5rem !important;
+    padding-left: 5px !important;
+}
+
+.app-dropdown>.ant-select-arrow,
+.app-dropdown>.ant-select-selector,
+.app-dropdown-dark>.ant-select-arrow,
+.app-dropdown-dark>.ant-select-selector {
     color: white !important;
+}
+
+.option-icon {
+    padding: 5px 3px;
+}
+
+.app-dropdown > .ant-select-selector > .ant-select-selection-item > .ant-select-selection-placeholder,
+.app-dropdown-dark > .ant-select-selector > .ant-select-selection-item > .ant-select-selection-placeholder {
+    line-height: 0px !important;
 }
   

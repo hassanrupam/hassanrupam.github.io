@@ -189,33 +189,6 @@ export const APPS_LIST = [
     // },
 ]
 
-export const REMOVABLE_MEDIA_OPTIONS_VALUES = [
-    {
-        mediaType: "CD Audio",
-        optionName: "Ask what to do",
-    },
-    {
-        mediaType: "DVD Video",
-        optionName: "Ask what to do",
-    },
-    {
-        mediaType: "Music Player",
-        optionName: "Rhythmbox",
-        optionIcon: UBUNTU_ICONS_VALUES.APPS.AUDIO_APP.SRC
-    },
-    {
-        mediaType: "Photos",
-        optionName: "Image Viewer",
-        optionIcon: UBUNTU_ICONS_VALUES.APPS.IMAGE_VIEWER.SRC
-    },
-    {
-        mediaType: "Software",
-        optionName: "Run Software",
-        optionIcon: UBUNTU_ICONS_VALUES.SYSTEM.VIEW_APP_GRID.SRC
-    },
-]
-
-
 export const NOTIFICATION_APPLICATION_LIST_VALUES = [
    {
     SERIAL: 1,
